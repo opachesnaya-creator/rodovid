@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Родовід Ольги Пачесної</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  html { color-scheme: light; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+</style>
+<style>
+  :root {
+    --paper: #f1f2ec;
+    --card: #fbfbf7;
+    --ink: #1f1d2b;
+    --muted: #625f73;
+    --rule: #d6d5dc;
+    --violet: #4a3d8f;      /* хімічний олівець, яким писали донесення */
+    --violet-soft: #e6e2f3;
+    --father: #3f6a5a;      /* татова лінія */
+    --father-soft: #e0ebe5;
+    --mother: #8a4a3c;      /* мамина лінія */
+    --mother-soft: #f1e3de;
+    --doc: #2f5f8a;
+    --doc-soft: #dde8f2;
+    --oral: #7a5a12;
+    --oral-soft: #f1e8cf;
+    --guess: #6b6a78;
+    --guess-soft: #e7e7ea;
+    --display: "Forum", "Times New Roman", serif;
+    --body: "Literata", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper: #16151c; --card: #1e1d26; --ink: #ebe9f2; --muted: #a6a3b5; --rule: #34323f;
+      --violet: #a99cf0; --violet-soft: #2b2745;
+      --father: #8cc3ad; --father-soft: #1f2e28;
+      --mother: #e3a393; --mother-soft: #33231f;
+      --doc: #8fbde6; --doc-soft: #1c2a38;
+      --oral: #e0c27a; --oral-soft: #332a14;
+      --guess: #b4b2c2; --guess-soft: #2a2932;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #16151c; --card: #1e1d26; --ink: #ebe9f2; --muted: #a6a3b5; --rule: #34323f;
+    --violet: #a99cf0; --violet-soft: #2b2745;
+    --father: #8cc3ad; --father-soft: #1f2e28;
+    --mother: #e3a393; --mother-soft: #33231f;
+    --doc: #8fbde6; --doc-soft: #1c2a38;
+    --oral: #e0c27a; --oral-soft: #332a14;
+    --guess: #b4b2c2; --guess-soft: #2a2932;
+  }
+
+  body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 80px; display: grid; gap: 56px; }
+  h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; margin: 0; line-height: 1.15; }
+  h1 { font-size: clamp(38px, 6vw, 60px); }
+  h2 { font-size: 32px; }
+  h3 { font-size: 25px; }
+  p { margin: 0; max-width: 66ch; }
+  a { color: var(--violet); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--violet); outline-offset: 3px; border-radius: 4px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .mono { font-family: var(--mono); font-size: 13.5px; }
+
+  header { display: grid; gap: 14px; }
+  .updated { display: grid; gap: 8px; }
+  .changelog { max-width: 72ch; }
+  .changelog li { font-size: 15px; }
+  header .lede { font-size: 19px; color: var(--muted); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; font-size: 14px; color: var(--muted); }
+  .tag { display: inline-block; font-family: var(--mono); font-size: 11.5px; letter-spacing: .03em; padding: 1px 8px; border-radius: 999px; white-space: nowrap; vertical-align: 2px; }
+  .tag.doc { background: var(--doc-soft); color: var(--doc); }
+  .tag.oral { background: var(--oral-soft); color: var(--oral); }
+  .tag.guess { background: var(--guess-soft); color: var(--guess); }
+  .swatch { display: inline-flex; gap: 6px; align-items: center; }
+  .swatch i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+
+  /* ---- дерево ---- */
+  .tree-scroll { overflow-x: auto; margin-inline: -20px; padding-inline: 20px; padding-bottom: 6px; }
+  .tree-svg { display: block; width: 1416px; max-width: none; height: auto; font-family: var(--body); }
+  .tree-svg .rowlab { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; fill: var(--muted); }
+  .tree-svg .ln { fill: none; stroke: var(--muted); stroke-width: 1.5; }
+  .tree-svg .ring { fill: var(--paper); stroke: var(--muted); stroke-width: 1.5; }
+  .tree-svg .box rect { fill: var(--card); stroke: var(--rule); stroke-width: 1; }
+  .tree-svg .box rect.edge { stroke: none; fill: var(--rule); }
+  .tree-svg .box.f rect.edge { fill: var(--father); }
+  .tree-svg .box.m rect.edge { fill: var(--mother); }
+  .tree-svg .box.me rect { fill: var(--violet-soft); }
+  .tree-svg .box.me rect.edge { fill: var(--violet); }
+  .tree-svg .box.unk rect { fill: transparent; stroke-dasharray: 4 3; }
+  .tree-svg .box.unk rect.edge { stroke-dasharray: none; }
+  .tree-svg .box.unk .nm { font-style: italic; fill: var(--muted); font-weight: 400; }
+  .tree-svg .nm { font-size: 13px; font-weight: 600; fill: var(--ink); text-anchor: middle; }
+  .tree-svg .dt { font-family: var(--mono); font-size: 10.5px; fill: var(--muted); text-anchor: middle; }
+  .tree-svg a { cursor: pointer; }
+  .tree-svg a:hover rect:not(.edge), .tree-svg a:focus rect:not(.edge) { stroke: var(--violet); }
+  .tree-svg a:focus { outline: none; }
+  .tree-note { font-size: 14px; color: var(--muted); }
+
+  /* ---- історії ---- */
+  .line-section { display: grid; gap: 28px; }
+  .line-title { display: grid; gap: 6px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+  .line-title.f h2 { color: var(--father); }
+  .line-title.m h2 { color: var(--mother); }
+  .person { display: grid; grid-template-columns: 200px 1fr; gap: 8px 32px; scroll-margin-top: 24px; }
+  .person .meta { display: grid; gap: 4px; align-content: start; }
+  .person .meta .rel { font-family: var(--mono); font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+  .person .meta .dates { font-family: var(--mono); font-size: 13px; }
+  .person .story { display: grid; gap: 14px; }
+  .person.major .story h3 { font-size: 30px; }
+  .facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; font-size: 15.5px; max-width: 70ch; }
+  .facts dt { font-family: var(--mono); font-size: 13px; color: var(--muted); padding-top: 2px; font-variant-numeric: tabular-nums; }
+  .facts dd { margin: 0; }
+  blockquote { margin: 0; padding: 12px 16px; border-left: 3px solid var(--violet); background: var(--violet-soft); border-radius: 0 6px 6px 0; font-style: italic; max-width: 64ch; }
+  blockquote cite { display: block; font-style: normal; font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 6px; }
+  figure { margin: 0; display: grid; gap: 6px; max-width: 760px; }
+  figure img { border-radius: 4px; border: 1px solid var(--rule); background: #fff; }
+  figcaption { font-size: 13.5px; color: var(--muted); }
+  .src { font-size: 13.5px; color: var(--muted); }
+  .src a { color: var(--muted); }
+  .kin { display: grid; gap: 4px; font-size: 15px; }
+  .kin li { margin: 0; }
+  ul.clean { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; max-width: 70ch; }
+  details { border: 1px solid var(--rule); border-radius: 6px; padding: 8px 14px; background: var(--card); max-width: 72ch; }
+  details summary { cursor: pointer; font-size: 15px; }
+  details[open] summary { margin-bottom: 8px; }
+  .table-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14.5px; min-width: 560px; }
+  th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--muted); letter-spacing: .04em; }
+  td.n { font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 13px; white-space: nowrap; }
+
+  .context { display: grid; gap: 18px; }
+  .timeline { display: grid; grid-template-columns: max-content 1fr; gap: 10px 20px; max-width: 76ch; }
+  .timeline dt { font-family: var(--mono); font-size: 13px; color: var(--violet); padding-top: 3px; font-variant-numeric: tabular-nums; }
+  .timeline dd { margin: 0; }
+
+  .next { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .next > div { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; }
+  .next h3 { font-size: 21px; }
+  .next p { font-size: 15px; }
+
+  footer { font-size: 13.5px; color: var(--muted); display: grid; gap: 6px; border-top: 1px solid var(--rule); padding-top: 18px; }
+
+  @media (max-width: 700px) {
+    body { font-size: 16px; }
+    .wrap { gap: 44px; padding-inline: 16px; }
+    .tree-scroll { margin-inline: -16px; padding-inline: 16px; }
+    .person { grid-template-columns: 1fr; }
+    .facts { grid-template-columns: 1fr; gap: 0 0; }
+    .facts dt { padding-top: 8px; }
+    .timeline { grid-template-columns: 1fr; gap: 2px; }
+    .timeline dd { margin-bottom: 8px; }
+  }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Гвоздавка Друга · Ясенове · Любашівщина</div>
+  <h1>Родовід Ольги Пачесної</h1>
+  <p class="lede">Чотири покоління, що жили на березі Кодими, на Любашівщині Одеської області. Тут усе, що вдалося знайти в архівах і базах про кожного з предків: хто вони, звідки, що з ними сталося.</p>
+  <div class="updated">
+    <div class="eyebrow">Оновлено 27 вересня 2026</div>
+    <details class="changelog">
+      <summary>Що нового на сторінці</summary>
+      <ul class="clean">
+        <li>Дати народження дідів: Олексій Терентійович — 14.09.1938, Іван Федотович — 22.09.1938.</li>
+        <li>Знайдено прадіда Терентія Івановича Пачесного (1912): медаль «За відвагу», повернувся з війни.</li>
+        <li>Знайдено Степана Федотовича Спинатія (1924), брата діда Івана: зник безвісти в липні 1944; у документі названо матір — Анастасію Устинівну.</li>
+        <li>Нагородний лист прадіда Андрія Стратієвського: орден Слави за бій на Шпрее 20.04.1945.</li>
+        <li>Донесення 1945 року з іменем прабабусі Анастасії Сидорівни (Дадул).</li>
+        <li>Стаття про рід Пачесних з хутора Пачислаго (Володимирівка).</li>
+      </ul>
+    </details>
+  </div>
+  <div class="legend">
+    <span class="swatch"><i style="background:var(--father)"></i>татова лінія</span>
+    <span class="swatch"><i style="background:var(--mother)"></i>мамина лінія</span>
+    <span><span class="tag doc">документ</span> знайдено в архіві</span>
+    <span><span class="tag oral">зі слів родини</span></span>
+    <span><span class="tag guess">версія</span> припущення, не доведено</span>
+  </div>
+</header>
+
+<section aria-labelledby="t-tree" style="display:grid;gap:14px">
+  <h2 id="t-tree">Дерево</h2>
+  <div class="tree-scroll">
+    <svg id="tree" class="tree-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Дерево роду: подружжя поруч, від них лінія вниз до дітей"></svg>
+  </div>
+  <p class="tree-note">Чоловік і дружина стоять поруч, кільце між ними — шлюб. Лінія від кільця вниз веде до дитини. Натисніть на ім'я, щоб перейти до історії. На вузькому екрані дерево гортається вбік.</p>
+<script>
+(function () {
+  // Координати задано вручну: сітка з 5 рядів поколінь, кожен бокс 140×64.
+  var W = 140, H = 64, rowY = [16, 156, 296, 436, 576];
+  var P = [
+    // прапрадіди
+    { id: 'hryhorii', x: 434, r: 0, n: ['Григорій', 'Стратієвський'], d: 'бл. 1880-х', side: 'f' },
+    { id: 'ivanp',    x: 100, r: 0, n: ['Іван', 'Пачесний'], d: 'з по батькові Терентія', side: 'f', href: '#terentii' },
+    { id: 'fedot0',   x: 768, r: 0, n: ['Спинатій ?'], d: 'батько Федота', side: 'm', unk: true, href: '#fedot' },
+    { id: 'kalyna',   x: 922, r: 0, n: ['Опанас', 'Бабенко'], d: 'імовірно', side: 'm', unk: true },
+    { id: 'yosyp',    x: 1102, r: 0, n: ['Йосип', 'Корой'], d: 'бл. 1870–90-х', side: 'm' },
+    { id: 'sydir',    x: 1256, r: 0, n: ['Сидір', 'Дадул'], d: 'бл. 1870–95', side: 'm' },
+    // прадіди
+    { id: 'pachesni', x: 100, r: 1, n: ['Терентій Іванович', 'Пачесний'], d: '1912 · фронтовик', side: 'f', href: '#terentii' },
+    { id: 'pachesni2',x: 254, r: 1, n: ['?'], d: 'мати діда Олексія', side: 'f', unk: true, href: '#terentii' },
+    { id: 'andrii',   x: 434, r: 1, n: ['Андрій Григорович', 'Стратієвський'], d: '1915 · фронтовик', side: 'f' },
+    { id: 'motria',   x: 588, r: 1, n: ['Мотря', 'Попеску'], d: 'роки невідомі', side: 'f' },
+    { id: 'spynatii', x: 768, r: 1, n: ['Федот', 'Спинатій'], d: 'роки невідомі', side: 'm', href: '#fedot' },
+    { id: 'kalyna2',  x: 922, r: 1, n: ['Калина', 'Бобенко'], d: 'роки невідомі', side: 'm', href: '#kalyna' },
+    { id: 'tymofii',  x: 1102, r: 1, n: ['Тимофій Йосипович', 'Корой'], d: '1910 – † 25.02.1945', side: 'm' },
+    { id: 'anastasiia',x: 1256, r: 1, n: ['Анастасія Сидорівна', 'Дадул'], d: 'роки невідомі', side: 'm' },
+    // діди
+    { id: 'oleksii2', x: 177, r: 2, n: ['Олексій Терентійович', 'Пачесний'], d: '14.09.1938 · Стримба', side: 'f', href: '#oleksii' },
+    { id: 'mariia',   x: 511, r: 2, n: ['Марія Андріївна', 'Стратієвська'], d: '05.05.1937', side: 'f' },
+    { id: 'ivan',     x: 845, r: 2, n: ['Іван Федотович', 'Спинатій'], d: '22.09.1938', side: 'm' },
+    { id: 'olha',     x: 1179, r: 2, n: ['Ольга Тимофіївна', 'Корой'], d: '21.03.1941 – 31.12.2017', side: 'm' },
+    // батьки
+    { id: 'anatolii', x: 344, r: 3, n: ['Анатолій Олексійович', 'Пачесний'], d: '25.02.1959 · Ясенове', side: 'f' },
+    { id: 'nadiia',   x: 1012, r: 3, n: ['Надія Іванівна', 'Спинатій'], d: '04.01.1961 · Гвоздавка 2', side: 'm' },
+    // діти
+    { id: 'volodymyr',x: 601, r: 4, n: ['Володимир', 'Анатолійович'], d: '06.01.1985', href: '#children' },
+    { id: 'me',       x: 755, r: 4, n: ['Ольга', 'Анатоліївна'], d: '08.12.1987 · Кишинів', me: true, href: '#children' }
+  ];
+  // Шлюби: [лівий, правий, дитина або список дітей]
+  var M = [
+    ['pachesni', 'pachesni2', ['oleksii2']],
+    ['andrii', 'motria', ['mariia']],
+    ['spynatii', 'kalyna2', ['ivan']],
+    ['tymofii', 'anastasiia', ['olha']],
+    ['oleksii2', 'mariia', ['anatolii']],
+    ['ivan', 'olha', ['nadiia']],
+    ['anatolii', 'nadiia', ['volodymyr', 'me']]
+  ];
+  // Один відомий батько → дитина
+  var S = [['ivanp', 'pachesni'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['yosyp', 'tymofii'], ['sydir', 'anastasiia']];
+  var by = {}; P.forEach(function (p) { by[p.id] = p; });
+  var cx = function (p) { return p.x + W / 2; };
+  var top = function (p) { return rowY[p.r]; };
+  var mid = function (p) { return rowY[p.r] + H / 2; };
+  var out = [];
+  var L = ['прапрадіди', 'прадіди', 'діди', 'батьки', 'діти'];
+  L.forEach(function (t, i) { out.push('<text class="rowlab" x="8" y="' + (rowY[i] + H / 2 + 4) + '">' + t + '</text>'); });
+  // лінії батько → дитина
+  S.forEach(function (s) { var a = by[s[0]], b = by[s[1]]; out.push('<path class="ln" d="M' + cx(a) + ' ' + (top(a) + H) + 'V' + top(b) + '"/>'); });
+  // лінії шлюбу та до дітей
+  M.forEach(function (m) {
+    var a = by[m[0]], b = by[m[1]], y = mid(a), x1 = a.x + W, x2 = b.x, mx = (x1 + x2) / 2;
+    out.push('<path class="ln" d="M' + x1 + ' ' + y + 'H' + x2 + '"/>');
+    out.push('<circle class="ring" cx="' + mx + '" cy="' + y + '" r="5"/>');
+    var kids = m[2].map(function (k) { return by[k]; });
+    if (kids.length === 1) {
+      out.push('<path class="ln" d="M' + mx + ' ' + y + 'V' + top(kids[0]) + '"/>');
+    } else {
+      var bar = top(kids[0]) - 20;
+      out.push('<path class="ln" d="M' + mx + ' ' + y + 'V' + bar + '"/>');
+      out.push('<path class="ln" d="M' + cx(kids[0]) + ' ' + bar + 'H' + cx(kids[kids.length - 1]) + '"/>');
+      kids.forEach(function (k) { out.push('<path class="ln" d="M' + cx(k) + ' ' + bar + 'V' + top(k) + '"/>'); });
+    }
+  });
+  // бокси
+  P.forEach(function (p) {
+    var cls = 'box' + (p.side ? ' ' + p.side : '') + (p.unk ? ' unk' : '') + (p.me ? ' me' : '');
+    var href = p.href || ('#' + p.id);
+    var y0 = top(p), lines = p.n.length;
+    var ty = lines === 1 ? y0 + 27 : y0 + 20;
+    var txt = p.n.map(function (t, i) { return '<tspan x="' + cx(p) + '" dy="' + (i ? 15 : 0) + '">' + t + '</tspan>'; }).join('');
+    out.push('<a href="' + href + '" class="' + cls + '"><rect x="' + p.x + '" y="' + y0 + '" width="' + W + '" height="' + H + '" rx="6"/>' +
+      '<rect class="edge" x="' + p.x + '" y="' + y0 + '" width="4" height="' + H + '" rx="2"/>' +
+      '<text class="nm" x="' + cx(p) + '" y="' + ty + '">' + txt + '</text>' +
+      '<text class="dt" x="' + cx(p) + '" y="' + (y0 + 54) + '">' + p.d + '</text></a>');
+  });
+  var svg = document.getElementById('tree');
+  svg.setAttribute('viewBox', '0 0 1416 660');
+  svg.innerHTML = out.join('');
+})();
+</script>
+</section>
+
+<!-- ===================== МАМИНА ЛІНІЯ ===================== -->
+<section class="line-section" aria-labelledby="t-m">
+  <div class="line-title m">
+    <div class="eyebrow">Мамина лінія</div>
+    <h2 id="t-m">Корої, Дадули, Спинатії</h2>
+  </div>
+
+  <article class="person major" id="tymofii">
+    <div class="meta">
+      <div class="rel">Прадід</div>
+      <div class="dates">1910 – 25.02.1945</div>
+      <div><span class="tag doc">документ</span></div>
+    </div>
+    <div class="story">
+      <h3>Тимофій Йосипович Корой</h3>
+      <p>Народився в 1910 році в Гвоздавці Другій, у родині Йосипа Короя. У березні 1941 року в нього й Анастасії народилася донька Ольга. За три місяці почалася війна, а в серпні село зайняли німецькі й румунські війська. У 1941 році до армії його, судячи з документів, не взяли: від Гвоздавки фронт відкотився швидше, ніж встигли мобілізувати.</p>
+      <p>Майже три роки родина жила під румунською окупацією. Наприкінці березня 1944 року район звільнили, і вже <b>20 квітня 1944</b> Тимофія призвав Любашівський райвійськкомат. Спершу він потрапив до 214-го армійського запасного полку 5-ї гвардійської армії, влітку 1944-го його перевели в 228-й гвардійський стрілецький полк 78-ї гвардійської дивізії.</p>
+      <p>Ця армія пройшла Віслу й Одер. У лютому 1945 року вона тримала фронт у Сілезії, на південь від оточеного Бреслау, біля гори Зобтен. Там <b>25 лютого 1945 року</b> червоноармієць Корой загинув. До Перемоги лишалося два з половиною місяці. Донці Ользі було без місяця чотири роки.</p>
+      <dl class="facts">
+        <dt>1910</dt><dd>народився, с. Гвоздавка 2, Любашівський район</dd>
+        <dt>20.04.1944</dt><dd>призваний Любашівським РВК; 214 армійський запасний стрілецький полк, 5 гв. армія</dd>
+        <dt>1944–1945</dt><dd>штаб 78 гв. стрілецької дивізії / 228 гв. стрілецький полк, 1-й Український фронт</dd>
+        <dt>25.02.1945</dt><dd>убитий у бою</dd>
+        <dt>поховання</dt><dd>спершу на східній околиці с. Альбрехтсдорф повіту Бреслау, за іншим документом у с. Міхельсдорф. Тепер це Ольбрахтовіце, гміна Собутка, біля Вроцлава, Польща</dd>
+      </dl>
+      <blockquote>Корой Тимофей Иосифович… 1910… Одесская обл., Любашевский р-н, с. Гвоздавка 2… Убит 25.2.45… Ближайшие родственники: жена Корой Анастасия Сидоровна, с. Гвоздавка 2.
+        <cite>Іменний список безповоротних втрат 228 гв. сп, 27.02.1945, рядок 28</cite></blockquote>
+      <figure>
+        <img src="donesennia-1945.jpg" alt="Рукописний іменний список втрат 228-го гвардійського стрілецького полку, лютий 1945 року; рядок 28 — Корой Тимофій Йосипович" loading="lazy">
+        <figcaption>Донесення, з якого стало відомо ім'я прабабусі. Прадід у рядку 28. ЦАМО, ф. 58, оп. 18003, спр. 340.</figcaption>
+      </figure>
+      <p class="src">Джерела: <a href="https://obd-memorial.ru/html/info.htm?id=56502898">ОБД «Мемориал» 56502898</a> · <a href="https://obd-memorial.ru/html/info.htm?id=63131117">63131117</a> · <a href="https://obd-memorial.ru/html/info.htm?id=1994666126">1994666126</a> (призов, запасний полк). Картку в «Памяти народа» знайшла Ольга.</p>
+    </div>
+  </article>
+
+  <article class="person major" id="anastasiia">
+    <div class="meta">
+      <div class="rel">Прабабуся</div>
+      <div class="dates">роки невідомі</div>
+      <div><span class="tag doc">документ</span> <span class="tag oral">зі слів родини</span></div>
+    </div>
+    <div class="story">
+      <h3>Анастасія Сидорівна Корой, дівоче Дадул</h3>
+      <p>Її ім'я й по батькові відомі з донесення 1945 року: у графі «ближайшие родственники» стоїть «жена Корой Анастасия Сидоровна, с. Гвоздавка 2». На цю адресу прийшла похоронка. Дівоче прізвище Дадул знає родина.</p>
+      <p>Анастасія пережила з маленькою донькою всю окупацію в Гвоздавці. Поруч, на околиці села, восени 1941 року окупанти влаштували табір для євреїв, у якому загинуло близько п'яти тисяч людей. У 1944 році чоловіка забрали на фронт, а в 1945-му вона залишилася вдовою з чотирирічною дитиною.</p>
+      <p>Прізвище Дадул дуже рідкісне. У військових базах воно трапляється лише двічі, обидва рази без місця народження:</p>
+      <ul class="clean">
+        <li><b>Дадул Леонтій Іларіонович</b>, 1905 р.н., гвардії червоноармієць, хлібопек 665-ї польової хлібопекарні 81-ї гв. дивізії, у армії з 3.04.1944, медаль «За бойові заслуги». Призваний польовим військкоматом, як і місцеві чоловіки після звільнення. <span class="tag guess">версія</span> міг бути її братом або дядьком.</li>
+        <li><b>Дадул Степан</b>, помер 19.10.1918, похований на євангелічному цвинтарі в Нойруппіні, Німеччина. Судячи з дати, це, мабуть, полонений Першої світової. <span class="tag guess">версія</span> зв'язок невідомий.</li>
+      </ul>
+      <p>Близьке молдавське прізвище <b>Додул</b> дуже поширене в сусідніх селах: Колбасна й Гандрабури, на тому ж березі Кодими. Серед них є Сидоровичі й Ісидоровичі (Ісидор = Сидір). Чи це та сама родина, покажуть тільки документи.</p>
+      <p class="src">Джерела: <a href="https://obd-memorial.ru/html/info.htm?id=56502898">ОБД 56502898</a> · <a href="https://podvignaroda.ru/?#id=38801888&amp;tab=navDetailManAward">Подвиг народа 38801888</a> · <a href="https://obd-memorial.ru/html/info.htm?id=1164042523">ОБД 1164042523</a></p>
+    </div>
+  </article>
+
+  <article class="person" id="yosyp">
+    <div class="meta"><div class="rel">Прапрадід</div><div class="dates">бл. 1870–1890-х</div><div><span class="tag doc">документ</span></div></div>
+    <div class="story">
+      <h3>Йосип Корой</h3>
+      <p>Відомий з по батькові Тимофія: «Иосифович» у всіх армійських документах. Мав жити в Гвоздавці на початку XX століття: у 1910 році там народився його син. Прізвище Корой схоже на молдавське Coroi. Жителів правобережної Гвоздавки здавна називають «молдаванами», бо село заснували переселенці з Молдавії наприкінці XVIII століття. <span class="tag guess">версія</span></p>
+      <p>Запис про народження Тимофія, де будуть повні імена Йосипа та його дружини, має бути в метричній книзі Архангело-Михайлівської церкви Гвоздавки за 1910 рік: Держархів Одеської області, <span class="mono">ф. 911, оп. 1, спр. 17, арк. 126–170</span>.</p>
+      <details>
+        <summary>Інші Корої з Гвоздавки у військових документах</summary>
+        <div class="table-scroll"><table>
+          <thead><tr><th>Хто</th><th>Рік</th><th>Доля</th></tr></thead>
+          <tbody>
+            <tr><td>Корой Конон Михайлович</td><td class="n">1903</td><td>призваний у липні 1941, зник безвісти у вересні 1941</td></tr>
+            <tr><td>Корой Савва Васильович</td><td class="n">1923</td><td>призваний у квітні 1944; медаль «За відвагу», вижив</td></tr>
+            <tr><td>Корой Володимир Калинкович</td><td class="n">1923</td><td>призваний в Одесі у 1941, зник безвісти</td></tr>
+          </tbody>
+        </table></div>
+      </details>
+    </div>
+  </article>
+
+  <article class="person" id="sydir">
+    <div class="meta"><div class="rel">Прапрадід</div><div class="dates">бл. 1870–1895</div><div><span class="tag doc">документ</span></div></div>
+    <div class="story">
+      <h3>Сидір Дадул</h3>
+      <p>Батько Анастасії, відомий з її по батькові. Серед призваних і загиблих Сидорів з Гвоздавки немає, найімовірніше через вік: на війну 1941–1945 років він був уже застарий.</p>
+    </div>
+  </article>
+
+  <article class="person major" id="olha">
+    <div class="meta">
+      <div class="rel">Бабуся</div>
+      <div class="dates">21.03.1941 – 31.12.2017</div>
+      <div><span class="tag doc">документ</span></div>
+    </div>
+    <div class="story">
+      <h3>Ольга Тимофіївна Спинатій, дівоче Корой</h3>
+      <p>Народилася 21 березня 1941 року в Гвоздавці Другій, за три місяці до війни. Перші три роки її життя припали на румунську окупацію: село входило до губернаторства «Трансністрія», Голтського повіту. Батька вона майже не могла пам'ятати: він пішов на фронт, коли їй було три роки, і загинув, коли їй ще не виповнилося чотирьох.</p>
+      <p>Виросла з матір'ю Анастасією, вийшла заміж за Івана Спинатія, народила доньку Надію. Прожила все життя в рідному селі й померла там 31 грудня 2017 року, у 76 років.</p>
+      <p class="src">Джерело: свідоцтво про смерть (видане Любашівським відділом ДРАЦС, 03.01.2018).</p>
+    </div>
+  </article>
+
+  <article class="person" id="ivan">
+    <div class="meta"><div class="rel">Дід</div><div class="dates">22.09.1938</div><div><span class="tag oral">зі слів родини</span></div></div>
+    <div class="story">
+      <h3>Іван Федотович Спинатій</h3>
+      <p>Народився 22 вересня 1938 року, на вісім днів пізніше за другого діда, Олексія. Чоловік Ольги Тимофіївни, батько Надії. Син Федота Спинатія; мати, за словами родини, — Калина Бобенко. Родом «з хуторів» під Ананьєвом. У сім'ї було десятеро дітей; Голодомор 1932–1933 років пережили четверо: <b>Степан, Настуня, Міша та Іван</b>.</p>
+      <p>Степана вдалося знайти в документах, див. <a href="#fedot">Федот Спинатій</a>. Ще один Спинатій з Гвоздавки-2, <b>Сергій Іванович (1921)</b>, воював у тому самому 233-му гвардійському артполку, що й прадід Андрій Стратієвський: обидва нагороджені одним наказом № 9/н від 15.10.1944, Сергій — медаллю «За відвагу». У 1986-му він отримав орден Вітчизняної війни I ступеня. Чи родич він Івану — невідомо.</p>
+      <p>Прізвище Спинатій у світі майже унікальне. Воно зустрічається лише на Любашівщині та поруч, у Котовському районі (с. Липецьке).</p>
+      <details>
+        <summary>Спинатії з Гвоздавки у військових документах</summary>
+        <div class="table-scroll"><table>
+          <thead><tr><th>Хто</th><th>Рік</th><th>Доля</th></tr></thead>
+          <tbody>
+            <tr><td>Спинатій Степан Федотович</td><td class="n">1924</td><td>брат діда Івана; зник безвісти в липні 1944 (див. нижче)</td></tr>
+            <tr><td>Спинатій Сергій Іванович</td><td class="n">1921</td><td>233 гв. артполк, медаль «За відвагу» 15.10.1944, вижив</td></tr>
+            <tr><td>Спинатій Андрій Іванович</td><td class="n">1919</td><td>призваний у січні 1940, останній лист у липні 1941, зник безвісти; дружина Ксенія Михайлівна, Гвоздавка 2. Можливо, брат Сергія <span class="tag guess">версія</span></td></tr>
+          </tbody>
+        </table></div>
+      </details>
+    </div>
+  </article>
+
+  <article class="person major" id="fedot">
+    <div class="meta"><div class="rel">Прадід</div><div class="dates">роки невідомі</div><div><span class="tag doc">документ</span> <span class="tag oral">зі слів родини</span></div></div>
+    <div class="story">
+      <h3>Федот Спинатій</h3>
+      <p>Батько діда Івана, відомий з його по батькові. Жив на хуторах під Ананьєвом, потім, судячи з документів сина, у Гвоздавці Другій. Діти народжувалися щонайменше з 1924 (Степан) по 1938 рік (Іван); з десятьох після Голодомору лишилося четверо.</p>
+      <p>Один із них, <b>Степан Федотович Спинатій</b>, 1924 року народження, є в списку Любашівського райвійськкомату від 15 вересня 1951 року. Його призвали польовим військкоматом у березні 1944-го, одразу після звільнення, коли йому було 19. Стрілець, безпартійний, 2-й Український фронт, 7-ма гвардійська армія. Зник безвісти в липні 1944 року. Це той самий Степан, якого родина пам'ятає серед уцілілих після Голодомору: він пережив голод, але не пережив війни.</p>
+      <blockquote>Спинатий Степан Федотович, рядовой, стрелок, б/п, 1924, с. Гвоздавка 2 Любашевского р-на… призван полевым военкоматом 03.1944… пропал без вести 07.1944… мать Спинатий Анастасия Устиновна, Одесской обл. Любашевского р-на с. Гвоздавка 2.
+        <cite>Список Любашівського РВК, 15.09.1951, рядок 5. ЦАМО, ф. 58, оп. 977524, спр. 260</cite></blockquote>
+      <p>У графі «родичі» матір'ю Степана записано <b>Анастасію Устинівну Спинатій</b>. Родина ж називає матір'ю Івана Калину Бобенко. Отже, або в Степана й Івана різні матері, тобто Федот був одружений двічі, або Калину в родині звали інакше. Це варто уточнити в старших родичів.</p>
+      <figure>
+        <img src="spysok-1951.jpg" alt="Список Любашівського райвійськкомату 1951 року, рядок 5 — Спинатій Степан Федотович" loading="lazy">
+        <figcaption>Список тих, кого можна вважати зниклими безвісти, складений райвійськкоматом у 1951 році. Степан у рядку 5.</figcaption>
+      </figure>
+      <p class="src">Джерело: <a href="https://obd-memorial.ru/html/info.htm?id=72406035">ОБД «Мемориал» 72406035</a></p>
+    </div>
+  </article>
+
+  <article class="person" id="kalyna">
+    <div class="meta"><div class="rel">Прабабуся</div><div class="dates">роки невідомі</div><div><span class="tag oral">зі слів родини</span></div></div>
+    <div class="story">
+      <h3>Калина Бобенко</h3>
+      <p>Мати діда Івана Спинатія, за словами родини (у документі 1951 року матір'ю його брата Степана названо Анастасію Устинівну, див. вище). У документах Гвоздавки Другої прізвище Бобенко зазвичай записане як <b>Бабенко</b>. Там жила родина братів Опанасовичів:</p>
+      <ul class="clean">
+        <li><b>Степан Опанасович</b>, 1903, сержант 1292-го полку 113-ї дивізії, зник безвісти 23.04.1943 під Чугуєвом на Харківщині</li>
+        <li><b>Аким Опанасович</b>, 1908, призваний 26.04.1944, 13-та гвардійська дивізія; загинув 22.02.1945 у Німеччині, за три дні до Тимофія Короя. Дружина Ірина Артемівна</li>
+        <li><b>Андрій Опанасович</b>, 1921, був у полоні до 1944-го; помер від ран 1.10.1944, похований у Кишиневі</li>
+        <li><b>Іван Опанасович</b> (записаний як Бобенко), 1925, 107-ма гвардійська дивізія; загинув 20.04.1945 в Австрії</li>
+      </ul>
+      <p><span class="tag oral">зі слів родини</span> Родина впізнає в них своїх. Найімовірніше, це рідні брати Калини, а її батько — <b>Опанас Бабенко</b>. Остаточно підтвердить по батькові Калини («Опанасівна») або запис у метричній книзі Гвоздавки.</p>
+      <p>Аким і Тимофій Корой пішли на фронт з одного села з різницею в шість днів і загинули в Сілезії з різницею в три дні: 22 і 25 лютого 1945 року.</p>
+    </div>
+  </article>
+
+  <article class="person" id="nadiia">
+    <div class="meta"><div class="rel">Мама</div><div class="dates">04.01.1961</div><div><span class="tag oral">зі слів родини</span></div></div>
+    <div class="story">
+      <h3>Надія Іванівна Пачесна, дівоче Спинатій</h3>
+      <p>Народилася 4 січня 1961 року в Гвоздавці Другій. 28 травня 1983 року в Гвоздавці вийшла заміж за Анатолія Пачесного.</p>
+    </div>
+  </article>
+</section>
+
+<!-- ===================== ТАТОВА ЛІНІЯ ===================== -->
+<section class="line-section" aria-labelledby="t-f">
+  <div class="line-title f">
+    <div class="eyebrow">Татова лінія</div>
+    <h2 id="t-f">Пачесні, Стратієвські, Попеску</h2>
+  </div>
+
+  <article class="person major" id="andrii">
+    <div class="meta">
+      <div class="rel">Прадід</div>
+      <div class="dates">1915 – після 1985</div>
+      <div><span class="tag doc">документ</span> <span class="tag oral">зі слів родини</span></div>
+    </div>
+    <div class="story">
+      <h3>Андрій Григорович Стратієвський</h3>
+      <p>Народився в 1915 році. Воював двічі, і обидва рази вижив.</p>
+      <p>Ще до великої війни, у 1938 році, 23-річним червоноармійцем брав участь у <b>боях біля озера Хасан</b> на Далекому Сході, проти японської армії. Його доньці Марії тоді був рік.</p>
+      <p>З першого дня німецького вторгнення, з 28 червня 1941 року, воював на Південному фронті. Двічі поранений <b>під Севастополем</b>: у лютому й 22 березня 1942 року. Що було з ним у 1942–1944 роках, документи не кажуть. Найімовірніше, після поранення він опинився вдома, на окупованій території.</p>
+      <p><b>28 березня 1944 року</b>, одразу після звільнення, Любашівський райвійськкомат призвав його знову. Він став телефоністом 233-го гвардійського артилерійського полку 95-ї гвардійської стрілецької Полтавської дивізії, пройшов 2-й і 1-й Українські фронти. У жовтні 1944-го отримав медаль «За бойові заслуги», а за бій 20 квітня 1945 року на річці Шпрее, за 60 км від Берліна, — орден Слави III ступеня.</p>
+      <blockquote>…по сильным артиллерийским налетом противника была повреждена линия связи, несмотря на непрекращающийся обстрел ежеминутно рискуя жизнью, пополз по линии и в короткий срок устранил шесть порывов линии связи, обеспечив этим самым бесперебойное управление огнем батарей.
+        <cite>Нагородний лист, 18.05.1945</cite></blockquote>
+      <dl class="facts">
+        <dt>1915</dt><dd>народився; українець, безпартійний</dd>
+        <dt>06–09.1938</dt><dd>бої біля озера Хасан</dd>
+        <dt>28.06.1941 – 22.03.1942</dt><dd>Південний фронт</dd>
+        <dt>02.1942, 22.03.1942</dt><dd>поранений під Севастополем</dd>
+        <dt>28.03.1944</dt><dd>знову призваний Любашівським РВК</dd>
+        <dt>15.10.1944</dt><dd>медаль «За бойові заслуги», наказ 233 гв. ап № 9/н</dd>
+        <dt>20.04.1945</dt><dd>подвиг на Шпрее: під обстрілом шість разів зрощує лінію зв'язку</dd>
+        <dt>23.05.1945</dt><dd>орден Слави III ступеня, наказ № 42/н; медаль «За перемогу над Німеччиною»</dd>
+        <dt>1985</dt><dd>ювілейний орден Вітчизняної війни I ступеня: отже, дожив до 40-річчя Перемоги</dd>
+      </dl>
+      <figure>
+        <img src="nahorodnyi-lyst-1945.jpg" alt="Нагородний лист на Стратієвського Андрія Григоровича до ордена Слави III ступеня, травень 1945 року" loading="lazy">
+        <figcaption>Нагородний лист до ордена Слави III ступеня. ЦАМО, ф. 33, оп. 690306.</figcaption>
+      </figure>
+      <p class="src">Джерела: <a href="https://podvignaroda.ru/?#id=42169165&amp;tab=navDetailManAward">Подвиг народа 42169165</a>; картотека нагороджень, запис 1007635120, місце народження «с. Гвоздавка 2». Родина підтверджує: це він, орден Слави й Севастополь у родині пам'ятають.</p>
+    </div>
+  </article>
+
+  <article class="person" id="motria">
+    <div class="meta"><div class="rel">Прабабуся</div><div class="dates">роки невідомі</div><div><span class="tag oral">зі слів родини</span></div></div>
+    <div class="story">
+      <h3>Мотря Стратієвська, дівоче Попеску</h3>
+      <p>Дружина Андрія Григоровича, мати Марії, бабуся тата Анатолія. Прізвище Попеску (Popescu) — одне з найпоширеніших румунських і молдавських. Разом із Короями й Дадулами це ще одна молдавська гілка роду.</p>
+    </div>
+  </article>
+
+  <article class="person" id="hryhorii">
+    <div class="meta"><div class="rel">Прапрадід</div><div class="dates">бл. 1880-х</div><div><span class="tag doc">документ</span></div></div>
+    <div class="story">
+      <h3>Григорій Стратієвський</h3>
+      <p>Батько Андрія, відомий з по батькові в нагородних документах. Стратієвські жили і в Гвоздавці Другій, і в Ясеновому. Наприклад, Стратієвський Петро Іванович, 1901 р.н., з Ясенового; Андрій Павлович, 1921 р.н., з Гвоздавки Другої, помер від ран у 1941.</p>
+    </div>
+  </article>
+
+  <article class="person" id="mariia">
+    <div class="meta"><div class="rel">Бабуся</div><div class="dates">05.05.1937</div><div><span class="tag oral">зі слів родини</span></div></div>
+    <div class="story">
+      <h3>Марія Андріївна Пачесна, дівоче Стратієвська</h3>
+      <p>Народилася 5 травня 1937 року. Коли їй був рік, батько воював на Хасані, а в чотири роки знову пішов на фронт. Дитинство пройшло під окупацією. Вийшла заміж за Олексія Пачесного; їхні діти — Анатолій і Надія, заміжня Перхун.</p>
+    </div>
+  </article>
+
+  <article class="person" id="oleksii">
+    <div class="meta"><div class="rel">Дід</div><div class="dates">14.09.1938</div><div><span class="tag oral">зі слів родини</span></div></div>
+    <div class="story">
+      <h3>Олексій Терентійович Пачесний</h3>
+      <p>Народився 14 вересня 1938 року. Чоловік Марії Андріївни, батько Анатолія й Надії. Коли йому було шість, батька Терентія забрали на фронт. За словами родини, зі <b>Стримби</b>, села Кодимського району за 60 км на північ від Гвоздавки; Стримба заснована в XVIII столітті молдавськими переселенцями, назва означає «крива». Пачесних зі Стримби у воєнних документах немає, а от у Гвоздавці Другій жив <a href="#terentii">Терентій Іванович Пачесний</a>, найімовірніше його батько. Тож, можливо, дід народився в Гвоздавці, а в Стримбі жив пізніше; рік і місце його народження варто уточнити.</p>
+      <p>Прізвище Пачесний дуже рідкісне, і майже всі його носії у воєнних документах — з Гвоздавки:</p>
+      <div class="table-scroll" id="pachesni"><table>
+        <thead><tr><th>Хто</th><th>Рік</th><th>Що відомо</th></tr></thead>
+        <tbody>
+          <tr><td>Пачесний Яків Федотович</td><td class="n">1906</td><td>Гвоздавка 2; дружина Ксенія Федорівна; був у полоні, звільнений; зник безвісти у травні 1944</td></tr>
+          <tr><td>Пачесний Петро Іванович</td><td class="n">1910</td><td>Гвоздавка 2; у полоні з серпня 1942, Сталінград</td></tr>
+          <tr><td>Пачесний Петро Лук'янович</td><td class="n">1917</td><td>Гвоздавка; призваний на Алтаї у 1941, зник безвісти в грудні 1941</td></tr>
+        </tbody>
+      </table></div>
+      <p><span class="tag guess">версія</span> Петро Іванович (1910) за по батькові й віком може бути рідним братом Терентія Івановича, тобто дідовим дядьком.</p>
+      <h3 style="font-size:22px;margin-top:6px">Рід Гаврила Пачесного з хутора Пачислаго</h3>
+      <p>У 2025 році «Odessa Life» написала про родину Пачесних з Гвоздавської волості. Заможний селянин <b>Гаврило Пачесний</b> мав щонайменше сто десятин землі. Його садиба в переліку поселень Ананьївського повіту 1896 року записана як <b>хутір Пачислаго</b>, тобто хутір Пачесних. На початку XX століття в родині було <b>десятеро синів</b>. Батьки наділили кожного землею, і хутір виріс у село <b>Володимирівку</b>, що входить до Гвоздавської сільради.</p>
+      <p>У 1930-х Пачесних розкуркулили: забрали землю, худобу, хату й переселили на околицю. Вони вступили до колгоспу. Син Гаврила <b>Петро</b> очолив городницьку бригаду, грав на скрипці на весіллях, мав з дружиною Февронією дев'ятеро дітей. Навесні 1944-го Февронія тиждень ховала Петра й чотирьох сусідів у буряковій ямі від відступаючих німців. Їхній син <b>Григорій Петрович</b> (1918, с. Володимирівка) воював у складі 2-го Українського фронту й повернувся з орденами Червоної Зірки та Слави. У 1986-му він отримав ювілейний орден Вітчизняної війни II ступеня. Дочка <b>Наталя</b> (Кіріяк) у 2025 році, у 87 років, жила в Солтанівці.</p>
+      <p><span class="tag guess">версія</span> Прізвище Пачесний у світі носять лише кілька десятків людей, і всі воєнні записи ведуть у Гвоздавку та Володимирівку. Дід Олексій — Терентійович, отже, син не Петра, а Терентія Івановича. Якщо прапрадід <b>Іван Пачесний</b> був одним із десяти синів Гаврила, то Петро — його брат, а Гаврило — ваш прапрапрадід. Це ще треба підтвердити.</p>
+      <p class="src">Джерела: <a href="https://odessa-life.od.ua/uk/article-uk/vid-kurkuliv-do-frontovykiv-istoriya-odniyeyi-ukrayinskoyi-rodyny-na-odeschyni">Юрій Федорчук, «Від куркулів до фронтовиків», Odessa Life, 24.07.2025</a> · <a href="https://podvignaroda.ru/?#id=1514317045&amp;tab=navDetailManUbil">Подвиг народа 1514317045</a></p>
+    </div>
+  </article>
+
+  <article class="person major" id="terentii">
+    <div class="meta"><div class="rel">Прадід</div><div class="dates">1912 – після 1945</div><div><span class="tag doc">документ</span> <span class="tag guess">версія</span></div></div>
+    <div class="story">
+      <h3>Терентій Іванович Пачесний</h3>
+      <p>Батько діда Олексія Терентійовича. Єдиний Терентій Пачесний у воєнних базах — <b>Терентій Іванович, 1912 року народження, з Гвоздавки Другої</b>. Прізвище настільки рідкісне, що збіг майже виключений, але прямого документа про зв'язок із дідом поки немає, тому позначено як версію.</p>
+      <p>В армію потрапив у 1944 році, після звільнення району, як і Тимофій Корой та Андрій Стратієвський. Служив у <b>28-му гвардійському повітряно-десантному полку 9-ї гвардійської повітряно-десантної дивізії</b>. Наказом по полку № 30/н від 17 вересня 1944 року нагороджений медаллю «За відвагу», а після війни — медаллю «За перемогу над Німеччиною». Тобто він повернувся з фронту живим. Самого нагородного листа в базі немає, лише картка обліку.</p>
+      <p>Його батько — <b>Іван Пачесний</b>, ваш прапрадід.</p>
+      <dl class="facts">
+        <dt>1912</dt><dd>народився, с. Гвоздавка 2</dd>
+        <dt>14.09.1938</dt><dd>народився син Олексій</dd>
+        <dt>1944</dt><dd>призваний; гвардії рядовий, 28 гв. повітряно-десантний полк, 9 гв. пдд</dd>
+        <dt>17.09.1944</dt><dd>медаль «За відвагу», наказ № 30/н</dd>
+        <dt>09.05.1945</dt><dd>медаль «За перемогу над Німеччиною»</dd>
+      </dl>
+      <p class="src">Джерело: <a href="https://podvignaroda.ru/?#id=1101701131&amp;tab=navDetailManCard">Подвиг народа 1101701131</a> (картотека нагороджень, шафа 66а, ящик 12).</p>
+    </div>
+  </article>
+
+  <article class="person" id="anatolii">
+    <div class="meta"><div class="rel">Тато</div><div class="dates">25.02.1959</div><div><span class="tag oral">зі слів родини</span></div></div>
+    <div class="story">
+      <h3>Анатолій Олексійович Пачесний</h3>
+      <p>Народився 25 лютого 1959 року в селі Ясенове Любашівського району, сусідньому з Гвоздавкою. 28 травня 1983 року одружився з Надією Спинатій. Має сестру Надію, заміжню Перхун.</p>
+    </div>
+  </article>
+</section>
+
+<section class="line-section" id="children" aria-labelledby="t-c">
+  <div class="line-title">
+    <div class="eyebrow">Діти</div>
+    <h2 id="t-c">Володимир і Ольга</h2>
+  </div>
+  <p>Володимир Анатолійович народився 6 січня 1985 року, Ольга Анатоліївна — 8 грудня 1987 року в Кишиневі.</p>
+</section>
+
+<!-- ===================== КОНТЕКСТ ===================== -->
+<section class="context" aria-labelledby="t-v">
+  <div class="line-title">
+    <div class="eyebrow">Звідки рід</div>
+    <h2 id="t-v">Гвоздавка Друга і Ясенове</h2>
+  </div>
+  <p>Гвоздавка Друга стоїть на правому березі Кодими, за 17 км від Любашівки. Село засноване в 1796 році. До 1917 року воно було центром Гвоздавської волості Ананьївського повіту Херсонської губернії й мало Архангело-Михайлівську церкву, збудовану в 1874 році. Жителів правобережної Гвоздавки називали «молдаванами», лівобережної Першої — «ляхами». Навіть за переписом 2001 року 5% жителів говорили молдовською. Звідси й прізвища Корой, Дадул, Попеску.</p>
+  <p>Ясенове, де народився тато, лежить поруч. Його Покровська церква й книги народжень теж збереглися в одеському архіві.</p>
+  <p><b>Одна армія на чотирьох.</b> Навесні 1944 року через Любашівщину проходила 5-та гвардійська армія, і всіх чоловіків з родини мобілізували саме в неї: Андрій Стратієвський у 95-ту гвардійську дивізію, Терентій Пачесний у 9-ту гвардійську повітряно-десантну, Аким Бабенко в 13-ту гвардійську (усі три — 33-й гвардійський корпус), Тимофій Корой у 78-му гвардійську. Разом вони пройшли Сандомирський плацдарм, Одер і Сілезію. Двоє загинули в лютому 1945-го під Бреслау, двоє дійшли до Шпрее й Ельби.</p>
+  <dl class="timeline">
+    <dt>1796</dt><dd>засновано село Гвоздавку</dd>
+    <dt>1874</dt><dd>збудовано Архангело-Михайлівську церкву</dd>
+    <dt>1932–1933</dt><dd>Голодомор: у селі загинуло щонайменше 13 людей</dd>
+    <dt>4.08.1941</dt><dd>німецькі й румунські війська зайняли Любашівку</dd>
+    <dt>1941–1944</dt><dd>румунська окупація: губернаторство «Трансністрія», Голтський повіт. Селом керує примарія</dd>
+    <dt>листопад 1941</dt><dd>табір для євреїв біля села; близько 5 тисяч загиблих</dd>
+    <dt>29–30.03.1944</dt><dd>2-й Український фронт звільняє Любашівку</dd>
+    <dt>квітень 1944</dt><dd>масовий призов звільнених чоловіків: Андрій Стратієвський (28.03), Тимофій Корой (20.04), Аким Бабенко (26.04)</dd>
+  </dl>
+</section>
+
+<!-- ===================== ДАЛІ ===================== -->
+<section style="display:grid;gap:18px" aria-labelledby="t-n">
+  <div class="line-title">
+    <div class="eyebrow">Що шукати далі</div>
+    <h2 id="t-n">Де лежать наступні покоління</h2>
+  </div>
+  <div class="next">
+    <div>
+      <div class="eyebrow">Держархів Одеської області</div>
+      <h3>Метричні книги 1893–1916</h3>
+      <p>Гвоздавка й Ясенове, <span class="mono">ф. 911, оп. 1</span>. Народження Тимофія Короя 1910 року — <span class="mono">спр. 17</span>. Там будуть Йосип Корой і його дружина. Не оцифровано, потрібен запит.</p>
+    </div>
+    <div>
+      <div class="eyebrow">Держархів Одеської області</div>
+      <h3>Примарії 1941–1944</h3>
+      <p>Списки жителів часів окупації: Гвоздавка Друга <span class="mono">Р-2665</span>, Ясенове Друге <span class="mono">Р-2666</span>, Ясенове Перше <span class="mono">Р-2667</span>, претура району <span class="mono">Р-2383</span>.</p>
+    </div>
+    <div>
+      <div class="eyebrow">ДРАЦС</div>
+      <h3>Записи про шлюб 1930-х</h3>
+      <p>Шлюб Тимофія Короя й Анастасії Дадул, шлюби Пачесних і Спинатіїв. Там записані дівочі прізвища й батьки.</p>
+    </div>
+    <div>
+      <div class="eyebrow">Родина</div>
+      <h3>Чого бракує</h3>
+      <p>Місця народження дідів Олексія Терентійовича та Івана Федотовича; хто мати Івана — Калина чи Анастасія Устинівна; імена Настуні й Міші з прізвищами за шлюбом; дівоче прізвище матері діда Олексія; де саме «хутори» під Ананьєвом.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>Сторінку веде Ольга Пачесна з допомогою Claude. Знайшли помилку або пам'ятаєте більше — напишіть Ользі.</div>
+  <div>Військові документи: ЦАМО, через бази ОБД «Мемориал», «Подвиг народа» і «Память народа». Метричні книги: Зведений каталог метричних книг Держархіву Одеської області, вип. 2 (2015). Фонди окупації: Реєстр фондів періоду нацистської окупації, Держархів Одеської області.</div>
+  <div>Позначки «версія» — припущення, які ще треба підтвердити документами.</div>
+</footer>
+
+</div>
+
+</body>
+</html>
