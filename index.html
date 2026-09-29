@@ -88,7 +88,7 @@
 
   /* ---- дерево ---- */
   .tree-scroll { overflow-x: auto; margin-inline: -20px; padding-inline: 20px; padding-bottom: 6px; }
-  .tree-svg { display: block; width: 2640px; max-width: none; height: auto; font-family: var(--body); }
+  .tree-svg { display: block; width: 3190px; max-width: none; height: auto; font-family: var(--body); }
   .tree-svg .rowlab { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; fill: var(--muted); }
   .tree-svg .ln { fill: none; stroke: var(--muted); stroke-width: 1.5; }
   .tree-svg .ring { fill: var(--paper); stroke: var(--muted); stroke-width: 1.5; }
@@ -186,6 +186,7 @@
     <details class="changelog">
       <summary>Що нового на сторінці</summary>
       <ul class="clean">
+        <li>У дереві з'явилися пунктирні картки імовірних родичів: Яків Сергійович Корой (брат прапрадіда Йосипа?), Петро Іванович Пачесний (брат прадіда Терентія?), Назарій Григорович Стратієвський (брат прадіда Андрія?) і Василиса Никифорівна Дадул (двоюрідна сестра прабабусі Анастасії?).</li>
         <li><b>Знайдено метрику Андрія Сидоровича Дадула</b>, брата прабабусі Анастасії (19.08.1910), скан додано. Розібрано гілки Короїв за хрещеними й поручителями: найімовірніший родич — Яків Сергійович, брат прапрадіда Йосипа.</li>
         <li>Дописано родичів із метричних книг 1907–1912 років: імовірний брат Ісидора Никифор Дадул, ще три гілки Пачесних, інші Корої та Назарій Григорович Стратієвський.</li>
         <li><b>Знайдено шлюб прапрадіда Івана Матвійовича Пачесного</b> (Гвоздавка, 19.01.1909): дівоче прізвище прапрабабусі Любові Луківни — <b>Рубля</b>. У дереві з'явилися окремі картки Любові та її батька Луки Рублі.</li>
@@ -231,64 +232,68 @@
   <div class="tree-scroll">
     <svg id="tree" class="tree-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Дерево роду: подружжя поруч, від них лінія вниз до дітей"></svg>
   </div>
-  <p class="tree-note">Чоловік і дружина стоять поруч, кільце між ними — шлюб. Зелена галочка в кутку картки — на цю людину є документ (метрика, військовий список чи нагородний лист). Лінія від кільця вниз веде до дітей: прямий предок — у повній картці, його брати й сестри — у сусідній світлій. Натисніть на ім'я, щоб перейти до історії. На вузькому екрані дерево гортається вбік.</p>
+  <p class="tree-note">Чоловік і дружина стоять поруч, кільце між ними — шлюб. Зелена галочка в кутку картки — на цю людину є документ (метрика, військовий список чи нагородний лист). Пунктирна картка зі знаком питання — імовірний родич: людина є в документах, але спорідненість ще не доведена; під ім'ям написано, ким вона, найімовірніше, вам доводиться. Лінія від кільця вниз веде до дітей: прямий предок — у повній картці, його брати й сестри — у сусідній світлій. Натисніть на ім'я, щоб перейти до історії. На вузькому екрані дерево гортається вбік.</p>
 <script>
 (function () {
   // Координати задано вручну: сітка з 5 рядів поколінь, кожен бокс 140×64.
   var W = 190, H = 68, SW = 204, rowY = [16, 160, 304, 448, 592, 736, 880, 1024];
   var P = [
-    { id: 'ivand',    x: 1974, r: 0, n: ['Іван', 'Дадул'], d: 'бл. 1760-х · версія', side: 'm', unk: true, href: '#lazar' },
-    { id: 'lazar', doc: true,    x: 1974, r: 1, n: ['Лазар Іванович', 'Дадул'], d: 'бл. 1790-х · Гвоздавка', side: 'm', href: '#lazar' },
-    { id: 'tetiana', doc: true,  x: 2190, r: 1, n: ['Тетяна Матвіївна', 'Бондарченко'], d: 'шлюб 13.02.1827', side: 'm', href: '#lazar' },
-    { id: 'sib_lazar', doc: true, x: 2402, r: 2, sib: true, n: ['Фотина 1818 · Гавриїл 1824', 'Терентій 1828 · Іов 1835'], d: 'діти Лазаря', side: 'm', href: '#lazar' },
+    { id: 'ivand',    x: 2504, r: 0, n: ['Іван', 'Дадул'], d: 'бл. 1760-х · версія', side: 'm', unk: true, href: '#lazar' },
+    { id: 'lazar', doc: true,    x: 2504, r: 1, n: ['Лазар Іванович', 'Дадул'], d: 'бл. 1790-х · Гвоздавка', side: 'm', href: '#lazar' },
+    { id: 'tetiana', doc: true,  x: 2720, r: 1, n: ['Тетяна Матвіївна', 'Бондарченко'], d: 'шлюб 13.02.1827', side: 'm', href: '#lazar' },
+    { id: 'sib_lazar', doc: true, x: 2932, r: 2, sib: true, n: ['Фотина 1818 · Гавриїл 1824', 'Терентій 1828 · Іов 1835'], d: 'діти Лазаря', side: 'm', href: '#lazar' },
     // прапрапрадіди
-    { id: 'danylo', doc: true,   x: 1974, r: 2, n: ['Данило Лазарович', 'Дадул'], d: 'Гвоздавка, 1872', side: 'm', href: '#danylo' },
-    { id: 'olena', doc: true,    x: 2190, r: 2, n: ['Олена', 'Феодосіївна'], d: 'дружина Данила', side: 'm', href: '#danylo' },
-    { id: 'sib_sydir', doc: true, x: 2402, r: 3, sib: true, n: ['Кирило (1871–72)', 'Фекла (1872)', 'Никифор ?'], d: 'діти Данила', side: 'm', href: '#danylo' },
-    { id: 'matvii', doc: true, x: 140, r: 2, n: ['Матвій', 'Пачесний'], d: 'з по батькові Івана', side: 'f', href: '#terentii' },
+    { id: 'danylo', doc: true,   x: 2504, r: 2, n: ['Данило Лазарович', 'Дадул'], d: 'Гвоздавка, 1872', side: 'm', href: '#danylo' },
+    { id: 'olena', doc: true,    x: 2720, r: 2, n: ['Олена', 'Феодосіївна'], d: 'дружина Данила', side: 'm', href: '#danylo' },
+    { id: 'sib_sydir', doc: true, x: 2932, r: 3, sib: true, n: ['Кирило (1871–72)', 'Фекла (1872)', 'Никифор ?'], d: 'діти Данила', side: 'm', href: '#danylo' },
+    { id: 'matvii', doc: true, x: 360, r: 2, n: ['Матвій', 'Пачесний'], d: 'з по батькові Івана', side: 'f', href: '#terentii' },
     // прапрадіди
-    { id: 'hryhorii', x: 824, r: 3, n: ['Григорій', 'Стратієвський'], d: 'бл. 1880-х', side: 'f' },
-    { id: 'luka', doc: true, x: 356, r: 2, n: ['Лука', 'Рубля'], d: 'з по батькові Любові', side: 'f', href: '#terentii' },
-    { id: 'liubov', doc: true, x: 356, r: 3, n: ['Любов Луківна', 'Рубля'], d: 'бл. 1883 · шлюб 1909', side: 'f', href: '#terentii' },
-    { id: 'ivanp', doc: true, x: 140, r: 3, n: ['Іван Матвійович', 'Пачесний'], d: 'бл. 1888 · шлюб 1909', side: 'f', href: '#terentii' },
-    { id: 'hryhv',    x: 572, r: 3, n: ['Григорій ?'], d: 'батько Віри', side: 'f', unk: true, href: '#terentii' },
-    { id: 'fedot0',   x: 1291, r: 3, n: ['Спінатій ?'], d: 'батько Федота', side: 'm', unk: true, href: '#fedot' },
-    { id: 'kalyna',   x: 1507, r: 3, n: ['Устин', 'Бабенко ?'], d: 'версія · батько Калини', side: 'm', unk: true },
-    { id: 'serhii', doc: true,   x: 1759, r: 2, n: ['Сергій', 'Корой'], d: 'з по батькові Йосипа', side: 'm', href: '#yosyp' },
-    { id: 'yosyp', doc: true,    x: 1759, r: 3, n: ['Йосип Сергійович Корой', '× Макрина Ксенофонтівна'], d: 'Гвоздавка · батьки Тимофія', side: 'm' },
-    { id: 'sydir', doc: true,    x: 1974, r: 3, n: ['Ісидор (Сидір) Данилович', 'Дадул'], d: '1881 · розстріляний, бл. 1933', side: 'm' },
-    { id: 'vassa', doc: true,    x: 2190, r: 3, n: ['Васса', 'Никифорівна'], d: 'дружина Ісидора', side: 'm', href: '#sydir' },
+    { id: 'hryhorii', x: 1124, r: 3, n: ['Григорій', 'Стратієвський'], d: 'бл. 1880-х', side: 'f' },
+    { id: 'luka', doc: true, x: 576, r: 2, n: ['Лука', 'Рубля'], d: 'з по батькові Любові', side: 'f', href: '#terentii' },
+    { id: 'liubov', doc: true, x: 576, r: 3, n: ['Любов Луківна', 'Рубля'], d: 'бл. 1883 · шлюб 1909', side: 'f', href: '#terentii' },
+    { id: 'ivanp', doc: true, x: 360, r: 3, n: ['Іван Матвійович', 'Пачесний'], d: 'бл. 1888 · шлюб 1909', side: 'f', href: '#terentii' },
+    { id: 'hryhv',    x: 792, r: 3, n: ['Григорій ?'], d: 'батько Віри', side: 'f', unk: true, href: '#terentii' },
+    { id: 'fedot0',   x: 1591, r: 3, n: ['Спінатій ?'], d: 'батько Федота', side: 'm', unk: true, href: '#fedot' },
+    { id: 'kalyna',   x: 1807, r: 3, n: ['Устин', 'Бабенко ?'], d: 'версія · батько Калини', side: 'm', unk: true },
+    { id: 'serhii', doc: true,   x: 2289, r: 2, n: ['Сергій', 'Корой'], d: 'з по батькові Йосипа', side: 'm', href: '#yosyp' },
+    { id: 'yosyp', doc: true,    x: 2289, r: 3, n: ['Йосип Сергійович Корой', '× Макрина Ксенофонтівна'], d: 'Гвоздавка · батьки Тимофія', side: 'm' },
+    { id: 'sydir', doc: true,    x: 2504, r: 3, n: ['Ісидор (Сидір) Данилович', 'Дадул'], d: '1881 · розстріляний, бл. 1933', side: 'm' },
+    { id: 'vassa', doc: true,    x: 2720, r: 3, n: ['Васса', 'Никифорівна'], d: 'дружина Ісидора', side: 'm', href: '#sydir' },
     // прадіди
-    { id: 'pachesni', doc: true, x: 248, r: 4, n: ['Терентій Іванович', 'Пачесний'], d: '31.05.1912 · фронтовик', side: 'f', href: '#terentii' },
-    { id: 'pachesni2', doc: true,x: 464, r: 4, n: ['Віра Григорівна', 'Пачесна'], d: 'роки й дівоче невідомі', side: 'f', href: '#terentii' },
-    { id: 'andrii', doc: true,   x: 824, r: 4, n: ['Андрій Григорович', 'Стратієвський'], d: '1915 · фронтовик', side: 'f' },
-    { id: 'motria',   x: 1039, r: 4, n: ['Мотря', 'Попеску'], d: 'роки невідомі', side: 'f' },
-    { id: 'spynatii', x: 1291, r: 4, n: ['Федот', 'Спінатій'], d: 'роки невідомі', side: 'm', href: '#fedot' },
-    { id: 'kalyna2',  x: 1507, r: 4, n: ['Калина (Агрипина?)', 'Устинівна Бабенко'], d: 'роки невідомі', side: 'm', href: '#kalyna' },
-    { id: 'tymofii', doc: true,  x: 1759, r: 4, n: ['Тимофій Йосипович', 'Корой'], d: '17.02.1910 – † 25.02.1945', side: 'm' },
-    { id: 'anastasiia', doc: true,x: 1974, r: 4, n: ['Анастасія Сидорівна', 'Дадул'], d: '25.12.1907 – 19.12.1991', side: 'm' },
+    { id: 'pachesni', doc: true, x: 468, r: 4, n: ['Терентій Іванович', 'Пачесний'], d: '31.05.1912 · фронтовик', side: 'f', href: '#terentii' },
+    { id: 'pachesni2', doc: true,x: 684, r: 4, n: ['Віра Григорівна', 'Пачесна'], d: 'роки й дівоче невідомі', side: 'f', href: '#terentii' },
+    { id: 'andrii', doc: true,   x: 1124, r: 4, n: ['Андрій Григорович', 'Стратієвський'], d: '1915 · фронтовик', side: 'f' },
+    { id: 'motria',   x: 1339, r: 4, n: ['Мотря', 'Попеску'], d: 'роки невідомі', side: 'f' },
+    { id: 'spynatii', x: 1591, r: 4, n: ['Федот', 'Спінатій'], d: 'роки невідомі', side: 'm', href: '#fedot' },
+    { id: 'kalyna2',  x: 1807, r: 4, n: ['Калина (Агрипина?)', 'Устинівна Бабенко'], d: 'роки невідомі', side: 'm', href: '#kalyna' },
+    { id: 'tymofii', doc: true,  x: 2289, r: 4, n: ['Тимофій Йосипович', 'Корой'], d: '17.02.1910 – † 25.02.1945', side: 'm' },
+    { id: 'anastasiia', doc: true,x: 2504, r: 4, n: ['Анастасія Сидорівна', 'Дадул'], d: '25.12.1907 – 19.12.1991', side: 'm' },
     // діди
-    { id: 'oleksii2', x: 356, r: 5, n: ['Олексій Терентійович', 'Пачесний'], d: '1938 · Гвоздавка 2', side: 'f', href: '#oleksii' },
-    { id: 'mariia',   x: 931, r: 5, n: ['Марія Андріївна', 'Стратієвська'], d: '1937', side: 'f' },
-    { id: 'ivan',     x: 1399, r: 5, n: ['Іван Федотович', 'Спінатій'], d: '1938', side: 'm' },
-    { id: 'olha', doc: true,     x: 1867, r: 5, n: ['Ольга Тимофіївна', 'Корой'], d: '21.03.1941 – 31.12.2017', side: 'm' },
+    { id: 'oleksii2', x: 576, r: 5, n: ['Олексій Терентійович', 'Пачесний'], d: '1938 · Гвоздавка 2', side: 'f', href: '#oleksii' },
+    { id: 'mariia',   x: 1231, r: 5, n: ['Марія Андріївна', 'Стратієвська'], d: '1937', side: 'f' },
+    { id: 'ivan',     x: 1699, r: 5, n: ['Іван Федотович', 'Спінатій'], d: '1938', side: 'm' },
+    { id: 'olha', doc: true,     x: 2397, r: 5, n: ['Ольга Тимофіївна', 'Корой'], d: '21.03.1941 – 31.12.2017', side: 'm' },
     // батьки
-    { id: 'anatolii', x: 888, r: 6, n: ['Анатолій Олексійович', 'Пачесний'], d: '1959 · Ясенове', side: 'f' },
-    { id: 'nadiia',   x: 1633, r: 6, n: ['Надія Іванівна', 'Спінатій'], d: '1961 · Гвоздавка 2', side: 'm' },
+    { id: 'anatolii', x: 1188, r: 6, n: ['Анатолій Олексійович', 'Пачесний'], d: '1959 · Ясенове', side: 'f' },
+    { id: 'nadiia',   x: 1933, r: 6, n: ['Надія Іванівна', 'Спінатій'], d: '1961 · Гвоздавка 2', side: 'm' },
     // діти
-    { id: 'volodymyr',x: 1057, r: 7, n: ['Володимир', 'Анатолійович'], d: '1985', href: '#children' },
-    { id: 'sib_dadul', doc: true, x: 2198, r: 4, sib: true, n: ['Андрій Сидорович', 'Дадул', 'розстріляний як зрадник'], d: '19.08.1910 · брат Анастасії', side: 'm', href: '#anastasiia' },
-    { id: 'sib_ivan', doc: true,  x: 1623, r: 5, sib: true, n: ['Степан (1924)', 'Настуня', 'Міша'], d: 'брати й сестра Івана', side: 'm', href: '#fedot' },
-    { id: 'sib_olha',  x: 2091, r: 5, sib: true, n: ['Марія 1930 · Михайло 1933', 'Андрій 1935 · Микола 1938'], d: 'брати й сестра Ольги', side: 'm', href: '#anastasiia' },
-    { id: 'sib_anat',  x: 550, r: 6, sib: true, n: ['Надія', 'заміжня Перхун'], d: 'сестра Анатолія', side: 'f', href: '#anatolii' },
-    { id: 'me',       x: 1273, r: 7, n: ['Ольга', 'Анатоліївна'], d: '1987 · Кишинів', me: true, href: '#children' }
+    { id: 'volodymyr',x: 1357, r: 7, n: ['Володимир', 'Анатолійович'], d: '1985', href: '#children' },
+    { id: 'sib_dadul', doc: true, x: 2728, r: 4, sib: true, n: ['Андрій Сидорович', 'Дадул', 'розстріляний як зрадник'], d: '19.08.1910 · брат Анастасії', side: 'm', href: '#anastasiia' },
+    { id: 'sib_ivan', doc: true,  x: 1923, r: 5, sib: true, n: ['Степан (1924)', 'Настуня', 'Міша'], d: 'брати й сестра Івана', side: 'm', href: '#fedot' },
+    { id: 'sib_olha',  x: 2621, r: 5, sib: true, n: ['Марія 1930 · Михайло 1933', 'Андрій 1935 · Микола 1938'], d: 'брати й сестра Ольги', side: 'm', href: '#anastasiia' },
+    { id: 'sib_anat',  x: 770, r: 6, sib: true, n: ['Надія', 'заміжня Перхун'], d: 'сестра Анатолія', side: 'f', href: '#anatolii' },
+    { id: 'me',       x: 1573, r: 7, n: ['Ольга', 'Анатоліївна'], d: '1987 · Кишинів', me: true, href: '#children' },
+    { id: 'sib_petro', x: 250, r: 4, sib: true, unk: true, n: ['Петро Іванович', 'Пачесний ?'], d: '1910 · брат Терентія? версія', side: 'f', href: '#oleksii' },
+    { id: 'sib_nazarii', x: 894, r: 4, sib: true, unk: true, n: ['Назарій Григорович', 'Стратієвський ?'], d: 'брат Андрія? версія', side: 'f', href: '#hryhorii' },
+    { id: 'sib_yakiv', x: 2059, r: 3, sib: true, unk: true, n: ['Яків Сергійович', 'Корой ?'], d: 'брат Йосипа? версія', side: 'm', href: '#yosyp' },
+    { id: 'sib_vasylysa', x: 2958, r: 4, sib: true, unk: true, n: ['Василиса Никифорівна', 'Дадул · 1912'], d: 'двоюрідна сестра Анастасії?', side: 'm', href: '#sydir' }
   ];
   // Шлюби: [лівий, правий, дитина або список дітей]
   var M = [
     ['lazar', 'tetiana', ['danylo', 'sib_lazar']],
     ['danylo', 'olena', ['sydir', 'sib_sydir']],
     ['sydir', 'vassa', ['anastasiia', 'sib_dadul']],
-    ['ivanp', 'liubov', ['pachesni']],
+    ['ivanp', 'liubov', ['sib_petro', 'pachesni']],
     ['pachesni', 'pachesni2', ['oleksii2']],
     ['andrii', 'motria', ['mariia']],
     ['spynatii', 'kalyna2', ['ivan', 'sib_ivan']],
@@ -298,7 +303,7 @@
     ['anatolii', 'nadiia', ['volodymyr', 'me']]
   ];
   // Один відомий батько → дитина
-  var S = [['ivand', 'lazar'], ['serhii', 'yosyp'], ['matvii', 'ivanp'], ['luka', 'liubov'], ['hryhv', 'pachesni2'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['yosyp', 'tymofii'], ['hryhv', 'pachesni2']];
+  var S = [['ivand', 'lazar'], ['serhii', 'sib_yakiv'], ['hryhorii', 'sib_nazarii'], ['sib_sydir', 'sib_vasylysa'], ['serhii', 'yosyp'], ['matvii', 'ivanp'], ['luka', 'liubov'], ['hryhv', 'pachesni2'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['yosyp', 'tymofii'], ['hryhv', 'pachesni2']];
   var by = {}; P.forEach(function (p) { by[p.id] = p; });
   var wOf = function (p) { return p.sib ? SW : W; };
   var cx = function (p) { return p.x + wOf(p) / 2; };
@@ -339,7 +344,7 @@
       (p.doc ? '<g class="docmark"><title>є документ</title><circle cx="' + (p.x + wOf(p) - 11) + '" cy="' + (y0 + 11) + '" r="7"/><path d="M' + (p.x + wOf(p) - 14) + ' ' + (y0 + 11) + 'l2.2 2.4 4-4.8"/></g>' : '') + '</a>');
   });
   var svg = document.getElementById('tree');
-  svg.setAttribute('viewBox', '0 0 2640 1110');
+  svg.setAttribute('viewBox', '0 0 3190 1110');
   svg.innerHTML = out.join('');
 })();
 </script>
