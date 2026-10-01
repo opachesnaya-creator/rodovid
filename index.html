@@ -16,6 +16,7 @@
 </style>
 <style>
   :root {
+    --anc-f: #8b1a1a; --anc-m: #1a2f6b;
     --paper: #f1f2ec;
     --card: #fbfbf7;
     --ink: #1f1d2b;
@@ -44,12 +45,14 @@
       --violet: #a99cf0; --violet-soft: #2b2745;
       --father: #8cc3ad; --father-soft: #1f2e28;
       --mother: #e3a393; --mother-soft: #33231f;
+      --anc-f: #f0a0a0; --anc-m: #a8bcf5;
       --doc: #8fbde6; --doc-soft: #1c2a38;
       --oral: #e0c27a; --oral-soft: #332a14;
       --guess: #b4b2c2; --guess-soft: #2a2932;
     }
   }
   :root[data-theme="dark"] {
+    --anc-f: #f0a0a0; --anc-m: #a8bcf5;
     color-scheme: dark;
     --paper: #16151c; --card: #1e1d26; --ink: #ebe9f2; --muted: #a6a3b5; --rule: #34323f;
     --violet: #a99cf0; --violet-soft: #2b2745;
@@ -107,6 +110,8 @@
   .tree-svg .box.sib .nm { font-size: 11.5px; font-weight: 400; }
   .tree-svg .nm { font-size: 13px; font-weight: 600; fill: var(--ink); text-anchor: middle; }
   .tree-svg .dt { font-family: var(--mono); font-size: 10.5px; fill: var(--muted); text-anchor: middle; }
+  .tree-svg .box.anc-f .nm, .tree-svg .box.anc-f .dt { fill: var(--anc-f); }
+  .tree-svg .box.anc-m .nm, .tree-svg .box.anc-m .dt { fill: var(--anc-m); }
   .tree-svg a { cursor: pointer; }
   .tree-svg a:hover rect:not(.edge), .tree-svg a:focus rect:not(.edge) { stroke: var(--violet); }
   .tree-svg a:focus { outline: none; }
@@ -274,11 +279,13 @@
     { id: 'andriip', x: 144, r: 1, unk: true, n: ['Андрій', 'Пачесний ?'], d: 'з по батькові Матвія', side: 'f', href: '#terentii' },
     { id: 'sib_ivanp', doc: true, x: 144, r: 3, sib: true, n: ['Макарій (1884)'], d: 'брат Івана', side: 'f', href: '#terentii' },
     // прапрадіди
-    { id: 'hryhorii', x: 1124, r: 3, n: ['Григорій', 'Стратієвський'], d: 'бл. 1880-х', side: 'f' },
-    { id: 'luka', doc: true, x: 576, r: 2, n: ['Лука', 'Рубля'], d: 'Кондратович · × Параскева Авксентіївна', side: 'f', href: '#terentii' },
+    { id: 'hryhorii', x: 1240, r: 3, n: ['Григорій', 'Стратієвський'], d: 'бл. 1880-х', side: 'f' },
+    { id: 'luka', doc: true, x: 576, r: 2, n: ['Лука', 'Рубля'], d: 'Кондратович · батько Любові', side: 'f', href: '#terentii' },
+    { id: 'paraskeva', doc: true, x: 792, r: 2, n: ['Параскева', 'Авксентіївна'], d: 'дружина Луки Рублі', side: 'f', href: '#terentii' },
     { id: 'liubov', doc: true, x: 576, r: 3, n: ['Любов Луківна', 'Рубля'], d: '27.09.1882 (15.09) · ⚭ 1909', side: 'f', href: '#terentii' },
     { id: 'ivanp', doc: true, x: 360, r: 3, n: ['Іван Матвійович', 'Пачесний'], d: '08.02.1888 (27.01) · ⚭ 1909', side: 'f', href: '#terentii' },
-    { id: 'hryhv',    x: 792, r: 3, n: ['Григорій ?'], d: 'батько Віри', side: 'f', unk: true, href: '#terentii' },
+    { id: 'sib_liubov', doc: true, x: 792, r: 3, sib: true, n: ['Мина (1885)'], d: 'брат Любові · ⚭ 1907', side: 'f', href: '#terentii' },
+    { id: 'hryhv',    x: 1020, r: 3, n: ['Григорій ?'], d: 'батько Віри', side: 'f', unk: true, href: '#terentii' },
     { id: 'fedot0',   x: 1591, r: 3, n: ['Спінатій ?'], d: 'батько Федота', side: 'm', unk: true, href: '#fedot' },
     { id: 'kalyna',   x: 1807, r: 3, n: ['Устин', 'Бабенко ?'], d: 'версія · батько Калини', side: 'm', unk: true },
     { id: 'serhii', doc: true,   x: 2289, r: 2, n: ['Сергій', 'Корой'], d: 'з по батькові Йосипа', side: 'm', href: '#yosyp' },
@@ -326,6 +333,7 @@
     ['nykyfor', 'kseniia', ['vassa', 'sib_vassa']],
     ['matvii', 'mariiat', ['sib_ivanp', 'ivanp']],
     ['ivanp', 'liubov', ['sib_petro', 'pachesni']],
+    ['luka', 'paraskeva', ['liubov', 'sib_liubov']],
     ['pachesni', 'pachesni2', ['oleksii2']],
     ['andrii', 'motria', ['mariia']],
     ['spynatii', 'kalyna2', ['ivan', 'sib_ivan']],
@@ -335,8 +343,11 @@
     ['anatolii', 'nadiia', ['volodymyr', 'me']]
   ];
   // Один відомий батько → дитина
-  var S = [['ivand', 'lazar'], ['lukak', 'kseniia'], ['serhii', 'sib_yakiv'], ['hryhorii', 'sib_nazarii'], ['sib_sydir', 'sib_vasylysa'], ['serhii', 'yosyp'], ['andriip', 'matvii'], ['luka', 'liubov'], ['hryhv', 'pachesni2'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['yosyp', 'tymofii'], ['hryhv', 'pachesni2']];
+  var S = [['ivand', 'lazar'], ['lukak', 'kseniia'], ['serhii', 'sib_yakiv'], ['hryhorii', 'sib_nazarii'], ['sib_sydir', 'sib_vasylysa'], ['serhii', 'yosyp'], ['andriip', 'matvii'], ['hryhv', 'pachesni2'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['yosyp', 'tymofii'], ['hryhv', 'pachesni2']];
   var by = {}; P.forEach(function (p) { by[p.id] = p; });
+  // прямі предки за статтю
+  var ANC_F = ['tetiana', 'olena', 'mariiat', 'paraskeva', 'liubov', 'kseniia', 'vassa', 'pachesni2', 'motria', 'kalyna2', 'anastasiia', 'mariia', 'olha', 'nadiia'];
+  var ANC_M = ['ivand', 'lazar', 'danylo', 'matvii', 'andriip', 'hryhorii', 'luka', 'ivanp', 'hryhv', 'fedot0', 'kalyna', 'serhii', 'yosyp', 'sydir', 'nykyfor', 'lukak', 'pachesni', 'andrii', 'spynatii', 'tymofii', 'oleksii2', 'ivan', 'anatolii'];
   var wOf = function (p) { return p.sib ? SW : W; };
   var cx = function (p) { return p.x + wOf(p) / 2; };
   var top = function (p) { return rowY[p.r]; };
@@ -364,7 +375,7 @@
   });
   // бокси
   P.forEach(function (p) {
-    var cls = 'box' + (p.side ? ' ' + p.side : '') + (p.unk ? ' unk' : '') + (p.me ? ' me' : '') + (p.sib ? ' sib' : '');
+    var cls = 'box' + (ANC_F.indexOf(p.id) >= 0 ? ' anc-f' : '') + (ANC_M.indexOf(p.id) >= 0 ? ' anc-m' : '') + (p.side ? ' ' + p.side : '') + (p.unk ? ' unk' : '') + (p.me ? ' me' : '') + (p.sib ? ' sib' : '');
     var href = p.href || ('#' + p.id);
     var y0 = top(p), lines = p.n.length;
     var ty = p.sib ? y0 + 18 : (lines === 1 ? y0 + 29 : y0 + 22);
