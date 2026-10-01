@@ -335,12 +335,13 @@
     out.push('<path class="ln" d="M' + x1 + ' ' + y + 'H' + x2 + '"/>');
     out.push('<circle class="ring" cx="' + mx + '" cy="' + y + '" r="5"/>');
     var kids = m[2].map(function (k) { return by[k]; });
-    if (kids.length === 1) {
+    if (kids.length === 1 && Math.abs(cx(kids[0]) - mx) < 1) {
       out.push('<path class="ln" d="M' + mx + ' ' + y + 'V' + top(kids[0]) + '"/>');
     } else {
       var bar = top(kids[0]) - 20;
+      var xs = kids.map(cx).concat([mx]);
       out.push('<path class="ln" d="M' + mx + ' ' + y + 'V' + bar + '"/>');
-      out.push('<path class="ln" d="M' + cx(kids[0]) + ' ' + bar + 'H' + cx(kids[kids.length - 1]) + '"/>');
+      out.push('<path class="ln" d="M' + Math.min.apply(null, xs) + ' ' + bar + 'H' + Math.max.apply(null, xs) + '"/>');
       kids.forEach(function (k) { out.push('<path class="ln" d="M' + cx(k) + ' ' + bar + 'V' + top(k) + '"/>'); });
     }
   });
