@@ -306,14 +306,14 @@
   // Координати задано вручну: сітка з 5 рядів поколінь, кожен бокс 140×64.
   var W = 190, H = 92, SW = 204, rowY = [16, 160, 304, 448, 592, 736, 880, 1024];
   var P = [
-    { id: 'ivand',    x: 2720, r: 0, n: ['Іван', 'Дадул'], d: 'бл. 1760-х · версія', side: 'm', unk: true, href: '#lazar' },
-    { id: 'lazar', doc: true,    x: 2720, r: 1, n: ['Лазар Іванович', 'Дадул'], d: 'бл. 1790-х · Гвоздавка', side: 'm', href: '#lazar' },
-    { id: 'tetiana', doc: true,  x: 2936, r: 1, n: ['Тетяна Матвіївна', 'вдова Бондарченкова'], d: 'шлюб 25.02.1827 (13.02)', d2: '† 20.01.1885 (8.01)? · 78?', d3: 'жила в Гвоздавці', side: 'm', href: '#lazar' },
-    { id: 'sib_lazar', doc: true, x: 3148, r: 2, sib: true, n: ['Фотина 1818 · Калістрат 1820', 'Гавриїл 1824–28 · Терентій 1828', 'Іов 1835 · Йосип бл. 1824?'], d: 'ще 6 дітей Лазаря', side: 'm', href: '#lazar' },
+    { id: 'ivand',    x: 2936, r: 0, n: ['Іван', 'Дадул'], d: 'бл. 1760-х · версія', side: 'm', unk: true, href: '#lazar' },
+    { id: 'lazar', doc: true,    x: 2936, r: 1, n: ['Лазар Іванович', 'Дадул'], d: 'бл. 1790-х · Гвоздавка', side: 'm', href: '#lazar' },
+    { id: 'tetiana', doc: true,  x: 3152, r: 1, n: ['Тетяна Матвіївна', 'вдова Бондарченкова'], d: 'шлюб 25.02.1827 (13.02)', d2: '† 20.01.1885 (8.01)? · 78?', d3: 'жила в Гвоздавці', side: 'm', href: '#lazar' },
+    { id: 'sib_lazar', doc: true, x: 3364, r: 2, sib: true, n: ['Фотина 1818 · Калістрат 1820', 'Гавриїл 1824–28 · Терентій 1828', 'Іов 1835 · Йосип бл. 1824?'], d: 'ще 6 дітей Лазаря', side: 'm', href: '#lazar' },
     // прапрапрадіди
-    { id: 'danylo', doc: true,   x: 2720, r: 2, n: ['Данило Лазарович', 'Дадул'], d: 'Гвоздавка, 1872', d2: 'дітей за док.: 6', side: 'm', href: '#danylo' },
-    { id: 'olena', doc: true,    x: 2936, r: 2, n: ['Олена', 'Феодосіївна'], d: 'дружина Данила', d3: 'жила в Гвоздавці', side: 'm', href: '#danylo' },
-    { id: 'sib_sydir', doc: true, x: 3148, r: 3, sib: true, n: ['Кирило 1871 · Фекла 1872', 'Наталія 1879 · Ірина 1884', 'Стефан 1889–1910 · Афанасій?'], d: 'брати й сестри Сидора', side: 'm', href: '#danylo' },
+    { id: 'danylo', doc: true,   x: 2936, r: 2, n: ['Данило Лазарович', 'Дадул'], d: 'Гвоздавка, 1872', d2: 'дітей за док.: 6', side: 'm', href: '#danylo' },
+    { id: 'olena', doc: true,    x: 3152, r: 2, n: ['Олена', 'Феодосіївна'], d: 'дружина Данила', d3: 'жила в Гвоздавці', side: 'm', href: '#danylo' },
+    { id: 'sib_sydir', doc: true, x: 3364, r: 3, sib: true, n: ['Кирило 1871 · Фекла 1872', 'Наталія 1879 · Ірина 1884', 'Стефан 1889–1910 · Афанасій?'], d: 'брати й сестри Сидора', side: 'm', href: '#danylo' },
     { id: 'matvii', doc: true, d2: '† 05.08.1888 (24.07)? · 40?', x: 144, r: 2, n: ['Матвій Андрійович', 'Пачесний'], d: 'нар. бл. 1848?', side: 'f', href: '#terentii' },
     { id: 'mariiat', doc: true, x: 360, r: 2, n: ['Марія', 'Тимофіївна'], d: 'дружина Матвія', d3: 'жила в Гвоздавці', side: 'f', href: '#terentii' },
     { id: 'andriip', x: 144, r: 1, unk: true, n: ['Андрій', 'Пачесний ?'], d: 'з по батькові Матвія', d2: 'сини Матвій, Прокофій?', side: 'f', href: '#terentii' },
@@ -333,13 +333,14 @@
     { id: 'serhii', doc: true,   x: 2289, r: 2, n: ['Сергій Панкратович?', 'Корой'], d: 'нар. 7.09.1836? · Гвоздавка', d2: 'сини Яків? Трифон? Лукіан?', side: 'm', href: '#yosyp' },
     { id: 'yosyp', doc: true,    x: 2289, r: 3, n: ['Йосип Сергійович', 'Корой'], d: 'Гвоздавка · ⚭ 28.01.1902', d2: 'дітей за док.: 6', side: 'm', href: '#yosyp' },
     { id: 'matrona', doc: true, x: 2504, r: 3, n: ['Матрона (Макрина)', 'Авксентіївна Дадул'], d: '28.04.1882 (16.04)', d2: 'у 1910–12: «Ксенофонтівна»', d3: 'парафія Гвоздавка', side: 'm', href: '#yosyp' },
-    { id: 'avksentii', doc: true, x: 2504, r: 2, n: ['Авксентій Дадул', '× Євдокія Семенівна'], d: 'нар. бл. 1856 · ⚭ 1879', d2: 'Йосипович? Лазарович?', side: 'm', href: '#yosyp' },
-    { id: 'sydir', doc: true,    x: 2720, r: 3, n: ['Ісидор (Сидір) Данилович', 'Дадул'], d: '17.02.1882 (5.02)', d2: 'ефрейтор · поранений 1917', d3: 'парафія Гвоздавка', side: 'm' },
-    { id: 'nykyfor', doc: true, x: 3364, r: 2, n: ['Никифор Кирилович', 'Стратієвський'], d: 'унтер-офіцер запасу', d2: 'брат Федір? (Точилове)', d3: 'жив у Гвоздавці', side: 'm', href: '#sydir' },
-    { id: 'kseniia', doc: true, x: 3580, r: 2, n: ['Ксенія Луківна', 'дівоче прізвище ?'], d: 'дружина Никифора', d3: 'жила в Гвоздавці', side: 'm', href: '#sydir' },
-    { id: 'lukak', x: 3580, r: 1, unk: true, n: ['Лука', 'прізвище невідоме'], d: 'з по батькові Ксенії', side: 'm', href: '#sydir' },
-    { id: 'sib_vassa', doc: true, x: 3580, r: 3, sib: true, n: ['Анна (1879)', 'Прокопій † 1915?'], d: 'сестра й брат Васси', side: 'm', href: '#sydir' },
-    { id: 'vassa', doc: true,    x: 2936, r: 3, n: ['Васса Никифорівна', 'Стратієвська'], d: '21.08.1884 (9.08)', d3: 'парафія Гвоздавка', side: 'm', href: '#sydir' },
+    { id: 'avksentii', doc: true, x: 2504, r: 2, n: ['Авксентій', 'Дадул'], d: 'нар. бл. 1856 · ⚭ 14.01.1879', d2: 'Йосипович? Лазарович?', side: 'm', href: '#yosyp' },
+    { id: 'yevdokiia', doc: true, x: 2720, r: 2, n: ['Євдокія Семенівна', 'Бовнегра ?'], d: 'нар. бл. 1862', d2: 'дружина Авксентія', d3: 'жила в Гвоздавці', side: 'm', href: '#yosyp' },
+    { id: 'sydir', doc: true,    x: 2936, r: 3, n: ['Ісидор (Сидір) Данилович', 'Дадул'], d: '17.02.1882 (5.02)', d2: 'ефрейтор · поранений 1917', d3: 'парафія Гвоздавка', side: 'm' },
+    { id: 'nykyfor', doc: true, x: 3580, r: 2, n: ['Никифор Кирилович', 'Стратієвський'], d: 'унтер-офіцер запасу', d2: 'брат Федір? (Точилове)', d3: 'жив у Гвоздавці', side: 'm', href: '#sydir' },
+    { id: 'kseniia', doc: true, x: 3796, r: 2, n: ['Ксенія Луківна', 'дівоче прізвище ?'], d: 'дружина Никифора', d3: 'жила в Гвоздавці', side: 'm', href: '#sydir' },
+    { id: 'lukak', x: 3796, r: 1, unk: true, n: ['Лука', 'прізвище невідоме'], d: 'з по батькові Ксенії', side: 'm', href: '#sydir' },
+    { id: 'sib_vassa', doc: true, x: 3796, r: 3, sib: true, n: ['Анна (1879)', 'Прокопій † 1915?'], d: 'сестра й брат Васси', side: 'm', href: '#sydir' },
+    { id: 'vassa', doc: true,    x: 3152, r: 3, n: ['Васса Никифорівна', 'Стратієвська'], d: '21.08.1884 (9.08)', d3: 'парафія Гвоздавка', side: 'm', href: '#sydir' },
     // прадіди
     { id: 'pachesni', doc: true, x: 468, r: 4, n: ['Терентій Іванович', 'Пачесний'], d: '13.06.1912 (31.05)', d3: 'парафія Гвоздавка', side: 'f', href: '#terentii' },
     { id: 'pachesni2', doc: true,x: 684, r: 4, n: ['Віра Григорівна', 'Пачесна'], d: 'роки й дівоче невідомі', side: 'f', href: '#terentii' },
@@ -382,6 +383,7 @@
     ['pachesni', 'pachesni2', ['oleksii2']],
     ['andrii', 'motria', ['mariia']],
     ['spynatii', 'kalyna2', ['ivan', 'sib_ivan']],
+    ['avksentii', 'yevdokiia', ['matrona']],
     ['yosyp', 'matrona', ['tymofii', 'sib_tymofii']],
     ['tymofii', 'anastasiia', ['olha', 'sib_olha']],
     ['oleksii2', 'mariia', ['sib_anat', 'anatolii']],
@@ -389,10 +391,10 @@
     ['anatolii', 'nadiia', ['volodymyr', 'me']]
   ];
   // Один відомий батько → дитина
-  var S = [['pankratii', 'serhii'], ['kondrat', 'luka'], ['ivand', 'lazar'], ['lukak', 'kseniia'], ['serhii', 'sib_yakiv'], ['hryhorii', 'sib_nazarii'], ['sib_sydir', 'sib_vasylysa'], ['serhii', 'yosyp'], ['avksentii', 'matrona'], ['andriip', 'matvii'], ['hryhv', 'pachesni2'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['hryhv', 'pachesni2']];
+  var S = [['pankratii', 'serhii'], ['kondrat', 'luka'], ['ivand', 'lazar'], ['lukak', 'kseniia'], ['serhii', 'sib_yakiv'], ['hryhorii', 'sib_nazarii'], ['sib_sydir', 'sib_vasylysa'], ['serhii', 'yosyp'], ['andriip', 'matvii'], ['hryhv', 'pachesni2'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['hryhv', 'pachesni2']];
   var by = {}; P.forEach(function (p) { by[p.id] = p; });
   // прямі предки за статтю
-  var ANC_F = ['matrona', 'tetiana', 'olena', 'mariiat', 'paraskeva', 'liubov', 'kseniia', 'vassa', 'pachesni2', 'motria', 'kalyna2', 'anastasiia', 'mariia', 'olha', 'nadiia'];
+  var ANC_F = ['matrona', 'yevdokiia', 'tetiana', 'olena', 'mariiat', 'paraskeva', 'liubov', 'kseniia', 'vassa', 'pachesni2', 'motria', 'kalyna2', 'anastasiia', 'mariia', 'olha', 'nadiia'];
   var ANC_M = ['pankratii', 'ivand', 'lazar', 'danylo', 'matvii', 'andriip', 'hryhorii', 'luka', 'ivanp', 'hryhv', 'fedot0', 'kalyna', 'serhii', 'yosyp', 'avksentii', 'sydir', 'nykyfor', 'lukak', 'pachesni', 'andrii', 'spynatii', 'tymofii', 'oleksii2', 'ivan', 'anatolii'];
   var wOf = function (p) { return p.sib ? SW : W; };
   var cx = function (p) { return p.x + wOf(p) / 2; };
@@ -436,7 +438,7 @@
       (p.doc ? '<g class="docmark"><title>є документ</title><circle cx="' + (p.x + wOf(p) - 11) + '" cy="' + (y0 + 11) + '" r="7"/><path d="M' + (p.x + wOf(p) - 14) + ' ' + (y0 + 11) + 'l2.2 2.4 4-4.8"/></g>' : '') + '</a>');
   });
   var svg = document.getElementById('tree');
-  svg.setAttribute('viewBox', '0 0 3820 1130');
+  svg.setAttribute('viewBox', '0 0 4036 1130');
   svg.innerHTML = out.join('');
 })();
 </script>
