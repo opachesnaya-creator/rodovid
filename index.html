@@ -191,6 +191,7 @@
     <details class="changelog">
       <summary>Що нового на сторінці</summary>
       <ul class="clean">
+        <li><b>У дерево додано версію лінії Стратієвських:</b> Трифон → Дементій Трифонович († 1905) → Григорій Дементійович? → прадід Андрій (усе зі знаком питання).</li>
         <li><b>Сестра бабусі Марії Андріївни — Галина Андріївна Стратієвська</b> (від родини); додано в дерево.</li>
         <li><b>8-ме і 9-те коліно (2.10):</b> казка Гвоздівки 1795 року прочитана повністю — у дворі № 14 <b>Іван Афанасійович Дадул</b>, 40, із сином Семеном (той самий Семен, 18, похований 1811-го) — імовірний батько Лазаря; знайдено шлюб <b>Кондрата Рублі з Тетяною Степанівною Догою</b> (20.01.1824) та їхніх дітей Савву (1826), Михайла (1827), Євгенію (1830); Тетяна, дочка Стефана Доги, хрещена в Ананьєві 1801-го; Петро Панкратійович Корой — брат Сергія; у дерево додано Стефана Догу, Архипа Пачесного й Дмитра Короя як версії дев'ятого коліна.</li>
         <li><b>Діти Дометія Трифоновича Стратієвського:</b> знайдено сина Софронія (21.03.1903); Григорій Дементійович (1915) — імовірно, його старший син (версія). Також знайдено метрику Фоки Йосиповича Короя (1905), брата прадіда Тимофія; мати — «Матрона Авксентіївна».</li>
@@ -325,7 +326,9 @@
     { id: 'andriip', x: 144, r: 1, unk: true, n: ['Андрій', 'Пачесний ?'], d: 'з по батькові Матвія', d2: 'сини Матвій, Прокофій?, Василь?', d3: 'Архипович? † 1883, 64 р.', side: 'f', href: '#terentii' },
     { id: 'sib_ivanp', doc: true, x: 144, r: 3, sib: true, n: ['Макарій (1884)'], d: 'брат Івана · дітей Матвія: 2', side: 'f', href: '#terentii' },
     // прапрадіди
-    { id: 'hryhorii', x: 1240, r: 3, n: ['Григорій', 'Стратієвський'], d: 'бл. 1880-х', side: 'f' },
+    { id: 'tryfon', x: 1240, r: 1, unk: true, n: ['Трифон', 'Стратієвський ?'], d: 'версія', side: 'f', href: '#hryhorii' },
+    { id: 'dementii', doc: true, x: 1240, r: 2, unk: true, n: ['Дементій Трифонович', 'Стратієвський ?'], d: '× Ксенія Афанасіївна', d2: '† 28.06.1905 · 33 роки', d3: 'син Софроній 1903', side: 'f', href: '#hryhorii' },
+    { id: 'hryhorii', x: 1240, r: 3, n: ['Григорій Дементійович?', 'Стратієвський'], d: '1890-ті? · поранений 1915?', side: 'f', href: '#hryhorii' },
     { id: 'pankratii', x: 2289, r: 1, unk: true, n: ['Панкратій Дмитрович', 'Корой ?'], d: 'Гвоздавка, 1836 · версія', d2: 'сини Сергій 1836, Петро (⚭ Ксенія)', side: 'm', href: '#deaths' },
     { id: 'kondrat', doc: true, x: 576, r: 1, unk: true, n: ['Кондрат', 'Рубля'], d: '⚭ 20.01.1824 · Гвоздавка', d2: 'діти: Савва 1826–27, Михайло 1827,', d3: 'Євгенія 1830–31, Лука ~1830?, Никита?', side: 'f', href: '#terentii' },
     { id: 'tetiana_doga', doc: true, x: 792, r: 1, unk: true, n: ['Тетяна Степанівна', 'Дога'], d: 'нар. 10.04.1801? · ⚭ 1824', d2: 'дочка Стефана Доги', side: 'f', href: '#terentii' },
@@ -400,11 +403,11 @@
     ['anatolii', 'nadiia', ['volodymyr', 'me']]
   ];
   // Один відомий батько → дитина
-  var S = [['pankratii', 'serhii'], ['stefan_doga', 'tetiana_doga'], ['arkhyp', 'andriip'], ['dmytro', 'pankratii'], ['ivand', 'lazar'], ['lukak', 'kseniia'], ['serhii', 'sib_yakiv'], ['hryhorii', 'sib_nazarii'], ['sib_sydir', 'sib_vasylysa'], ['serhii', 'yosyp'], ['andriip', 'matvii'], ['hryhv', 'pachesni2'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['hryhv', 'pachesni2']];
+  var S = [['tryfon', 'dementii'], ['dementii', 'hryhorii'], ['pankratii', 'serhii'], ['stefan_doga', 'tetiana_doga'], ['arkhyp', 'andriip'], ['dmytro', 'pankratii'], ['ivand', 'lazar'], ['lukak', 'kseniia'], ['serhii', 'sib_yakiv'], ['hryhorii', 'sib_nazarii'], ['sib_sydir', 'sib_vasylysa'], ['serhii', 'yosyp'], ['andriip', 'matvii'], ['hryhv', 'pachesni2'], ['hryhorii', 'andrii'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['hryhv', 'pachesni2']];
   var by = {}; P.forEach(function (p) { by[p.id] = p; });
   // прямі предки за статтю
   var ANC_F = ['tetiana_doga', 'matrona', 'yevdokiia', 'tetiana', 'olena', 'mariiat', 'paraskeva', 'liubov', 'kseniia', 'vassa', 'pachesni2', 'motria', 'kalyna2', 'anastasiia', 'mariia', 'olha', 'nadiia'];
-  var ANC_M = ['kondrat', 'stefan_doga', 'arkhyp', 'dmytro', 'pankratii', 'ivand', 'lazar', 'danylo', 'matvii', 'andriip', 'hryhorii', 'luka', 'ivanp', 'hryhv', 'fedot0', 'kalyna', 'serhii', 'yosyp', 'avksentii', 'sydir', 'nykyfor', 'lukak', 'pachesni', 'andrii', 'spynatii', 'tymofii', 'oleksii2', 'ivan', 'anatolii'];
+  var ANC_M = ['kondrat', 'stefan_doga', 'arkhyp', 'dmytro', 'pankratii', 'ivand', 'lazar', 'danylo', 'matvii', 'andriip', 'hryhorii', 'dementii', 'tryfon', 'luka', 'ivanp', 'hryhv', 'fedot0', 'kalyna', 'serhii', 'yosyp', 'avksentii', 'sydir', 'nykyfor', 'lukak', 'pachesni', 'andrii', 'spynatii', 'tymofii', 'oleksii2', 'ivan', 'anatolii'];
   var wOf = function (p) { return p.sib ? SW : W; };
   var cx = function (p) { return p.x + wOf(p) / 2; };
   var top = function (p) { return rowY[p.r]; };
