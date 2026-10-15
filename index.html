@@ -374,7 +374,8 @@
     { id: 'sib_ivanp', doc: true, x: 144, r: 4, sib: true, n: ['Макарій (1884)'], d: 'брат Івана · дітей Матвія: 2', side: 'f', href: '#terentii' },
     // прапрадіди
     { id: 'tryfon', x: 1188, r: 2, unk: true, n: ['Кирило', 'Стратієвський'], d: 'сини Никифор, Павло, Ісидор', d2: 'версія', side: 'f', href: '#hryhorii' },
-    { id: 'dementii', doc: true, x: 1188, r: 3, n: ['Павло Кирилович', 'Стратієвський'], d: '× Євдокія Зиновіївна', d2: 'сини Іоанн, Тимофій, Григорій', side: 'f', href: '#hryhorii' },
+    { id: 'dementii', doc: true, x: 1188, r: 3, n: ['Павло Кирилович', 'Стратієвський'], d: 'діти 1881–1887 і далі', d2: 'сини Іоанн, Тимофій, Григорій', side: 'f', href: '#hryhorii' },
+    { id: 'yevd_z', doc: true, x: 1386, r: 3, n: ['Євдокія Зиновіївна', 'дівоче прізвище ?'], d: 'дружина Павла Кириловича', d2: 'мати Григорія (1887)', side: 'f', href: '#hryhorii' },
     { id: 'hryhorii', doc: true, x: 1188, r: 4, n: ['Григорій Павлович', 'Стратієвський'], d: '16.02.1887 (4.02)', d2: '× Дарія Василівна · ⚭ 1912', d3: '5 дітей · Параскева † 1913', side: 'f', href: '#hryhorii' },
     { id: 'dariia', doc: true, x: 1386, r: 4, n: ['Дарія Василівна', 'Митрофанська'], d: 'бл. 1892 · ⚭ 23.10.1912', d2: '«Дарина» · мати Андрія', side: 'f', href: '#hryhorii' },
     { id: 'pankratii', x: 2289, r: 2, unk: true, n: ['Панкратій Дмитрович', 'Корой ?'], d: 'Гвоздавка, 1836 · версія', d2: 'сини Сергій 1836, Петро', side: 'm', href: '#deaths' },
@@ -446,6 +447,7 @@
     ['kondrat', 'tetiana_doga', ['luka']],
     ['luka', 'paraskeva', ['liubov', 'sib_liubov']],
     ['pachesni', 'pachesni2', ['sib_oleksii', 'oleksii2']],
+    ['dementii', 'yevd_z', ['hryhorii']],
     ['hryhorii', 'dariia', ['andrii']],
     ['andrii', 'motria', ['mariia', 'sib_mariia']],
     ['spynatii', 'kalyna2', ['ivan', 'sib_ivan']],
@@ -458,10 +460,10 @@
     ['anatolii', 'nadiia', ['volodymyr', 'me']]
   ];
   // Один відомий батько → дитина
-  var S = [['terentii_rublia', 'andrii_rublia'], ['andrii_rublia', 'kondrat'], ['afanasii', 'ivand'], ['tryfon', 'dementii'], ['dementii', 'hryhorii'], ['stefan_doga', 'tetiana_doga'], ['arkhyp', 'andriip'], ['dmytro', 'pankratii'], ['ivand', 'lazar'], ['lukak', 'kseniia'], ['sib_sydir', 'sib_vasylysa'], ['andriip', 'matvii'], ['hryhv', 'pachesni2'], ['havryil', 'fedot0'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['hryhv', 'pachesni2']];
+  var S = [['terentii_rublia', 'andrii_rublia'], ['andrii_rublia', 'kondrat'], ['afanasii', 'ivand'], ['tryfon', 'dementii'], ['stefan_doga', 'tetiana_doga'], ['arkhyp', 'andriip'], ['dmytro', 'pankratii'], ['ivand', 'lazar'], ['lukak', 'kseniia'], ['sib_sydir', 'sib_vasylysa'], ['andriip', 'matvii'], ['hryhv', 'pachesni2'], ['havryil', 'fedot0'], ['fedot0', 'spynatii'], ['kalyna', 'kalyna2'], ['hryhv', 'pachesni2']];
   var by = {}; P.forEach(function (p) { by[p.id] = p; });
   // прямі предки за статтю
-  var ANC_F = ['dariia', 'olena_kl', 'tetiana_koroi', 'tetiana_doga', 'matrona', 'yevdokiia', 'tetiana', 'olena', 'mariiat', 'paraskeva', 'liubov', 'kseniia', 'vassa', 'pachesni2', 'motria', 'kalyna2', 'anastasiia', 'mariia', 'olha', 'nadiia'];
+  var ANC_F = ['yevd_z', 'dariia', 'olena_kl', 'tetiana_koroi', 'tetiana_doga', 'matrona', 'yevdokiia', 'tetiana', 'olena', 'mariiat', 'paraskeva', 'liubov', 'kseniia', 'vassa', 'pachesni2', 'motria', 'kalyna2', 'anastasiia', 'mariia', 'olha', 'nadiia'];
   var ANC_M = ['havryil', 'terentii_rublia', 'andrii_rublia', 'afanasii', 'kondrat', 'stefan_doga', 'arkhyp', 'dmytro', 'pankratii', 'ivand', 'lazar', 'danylo', 'matvii', 'andriip', 'hryhorii', 'dementii', 'tryfon', 'luka', 'ivanp', 'hryhv', 'fedot0', 'kalyna', 'serhii', 'yosyp', 'avksentii', 'sydir', 'nykyfor', 'lukak', 'pachesni', 'andrii', 'spynatii', 'tymofii', 'oleksii2', 'ivan', 'anatolii'];
   var wOf = function (p) { return p.sib ? SW : W; };
   var cx = function (p) { return p.x + wOf(p) / 2; };
