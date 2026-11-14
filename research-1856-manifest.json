@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-14",
+  "source": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/1201-1300/0037_03_1212_DAOO.djvu",
+  "archive": "ДАОО 37/3/1212",
+  "images_1_based": {
+    "title": 376,
+    "death_record": 407
+  },
+  "record": "арк. 464 зв. – 465, чоловічий № 15",
+  "relationship_status": "not established; separate candidate, not added to direct ancestry",
+  "files": {
+    "research-1856-deaths-407.jpg": {
+      "bytes": 1058383,
+      "sha256": "35c5fa04fa09d938d137dc40b67ef3e0897077cf282ecdeda1b463d738e72680"
+    },
+    "research-1856-title-376.jpg": {
+      "bytes": 862824,
+      "sha256": "a8fe310df7b71ea9d1830b5eb0f4a92cc4e4c68ac840b4a243c575607144c574"
+    },
+    "research-1856-vasyl-yosypovych-koroi-detail.jpg": {
+      "bytes": 82974,
+      "sha256": "cc1c072925113ef640324c8d3cf498aac0091a318f63449655108ce2d3e244f4"
+    },
+    "research-gvozdavka-1856.html": {
+      "bytes": 9838,
+      "sha256": "82628c8d1c3c365c85e61187bd3e2fc9549b125ce1407203c9e6bc135f1b8d3b"
+    },
+    "research-gvozdavka-1856.txt": {
+      "bytes": 6820,
+      "sha256": "31c0d0b462bb3a4cbde8ca4481251376d3a5bf63fb48d7612cee5e5c10239033"
+    }
+  }
+}
