@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-14",
+  "comparison_commit": "bc124f3773549c3894ccf12920426086440031c6",
+  "archive": "ДАОО37/3/104",
+  "pdf_page": 358,
+  "folio": "389 (crossed-out old369)",
+  "entry": "male7",
+  "event": "birth",
+  "julian": "1805-04-04",
+  "gregorian": "1805-04-16",
+  "people": {
+    "child": "Іосиф/Йосип",
+    "father": "Кондрат Пачисний",
+    "mother": "Анна"
+  },
+  "kinship_status": "documented parents; identity with1844–1845 adult and link to user unproved",
+  "source_url": "https://commons.wikimedia.org/w/index.php?curid=110150636",
+  "original_pdf": {
+    "file": "37-3-104.pdf",
+    "sha256": "0b86241ce12855572f28c630006359b83eb9fb50070f4c249adee234fc8b0bf1"
+  },
+  "files": {
+    "index.html": {
+      "bytes": 729039,
+      "sha256": "e7c91d96889e00de25948f6cb2e8da1aa746513291e5b9d834af90c7341d9b34"
+    },
+    "research-pachesny-1805-detail.jpg": {
+      "bytes": 279111,
+      "sha256": "56e48b7420b6b51a7573cadd65031459780fd31b6156201954d5be515e32e6cd"
+    },
+    "research-pachesny-1805-page.jpg": {
+      "bytes": 1740688,
+      "sha256": "7a0917f612e304f660c86497ff65162c72cb1fb18e2f39d9b118ae898956fb58"
+    },
+    "research-pachesny-1805-title.jpg": {
+      "bytes": 1389902,
+      "sha256": "c09fdcf5b1f10904177c9ebd148ff993bcddbda342ce7d3b59c22066b43d7bd4"
+    },
+    "research-pachesny-1805.html": {
+      "bytes": 14248,
+      "sha256": "fafa33210be1ad749337d8985383627f398a2ff8e66fe3f6751bb3a7c5fe51d1"
+    },
+    "research-pachesny-1805.txt": {
+      "bytes": 12259,
+      "sha256": "af2eaec16451b28ce1aa233a2a0c4767060f02758217fb9d022a748bf7fe3c78"
+    }
+  }
+}

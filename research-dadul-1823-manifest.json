@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-15",
+  "comparison_commit": "bc124f3773549c3894ccf12920426086440031c6",
+  "archive": "ДАОО 37/3/269",
+  "image_1_based": 653,
+  "side": "left",
+  "entry": "male 9",
+  "event": "burial wording in death register",
+  "julian": "1823-06-09",
+  "gregorian": "1823-06-21",
+  "child": "Семіон (Семен/Симеон)",
+  "father": "Лазар Дадул",
+  "mother": null,
+  "age_years_as_recorded": 2,
+  "identity_with_tree": "unproved",
+  "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0269_DAOO.djvu",
+  "source_sha256": "c3e32fb670d3637d99e9bcee93a5ef4ff33d2bc0aa371d2160e895ce63b54930",
+  "files": {
+    "research-dadul-1823-detail.png": {
+      "bytes": 603331,
+      "sha256": "ef4899801eb6ea78f19b5716b558c3575da5e1c83917920c8c92f2d90fb91354"
+    },
+    "research-dadul-1823-month.jpg": {
+      "bytes": 1119239,
+      "sha256": "23687c9be283c4c8673431898e9a568a1006be8546fdb5ec134abc0bdff85750"
+    },
+    "research-dadul-1823-page.jpg": {
+      "bytes": 1095303,
+      "sha256": "567a47fba4e18b978b5a3d8c9febfbddb3e50bd874328242461c02f6a97648bf"
+    },
+    "research-dadul-1823-title.jpg": {
+      "bytes": 962395,
+      "sha256": "df1f3757cb2da74f3d998096d93f5cefd19d51a5dbea61390111c87698bc3b5a"
+    },
+    "research-dadul-1823.html": {
+      "bytes": 12065,
+      "sha256": "22c36276328416ab6529d0116a225514e7c7bbed5af2c89575a2e90604241062"
+    },
+    "research-dadul-1823.txt": {
+      "bytes": 10167,
+      "sha256": "a02dd6f33864b1273e9c18d82d59cd0597ae548caf4c7048bd2ebd1df0346203"
+    }
+  }
+}
