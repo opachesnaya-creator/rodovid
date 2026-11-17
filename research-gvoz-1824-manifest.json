@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-17",
+  "comparison_commit": "0341263d1abc53ea76f4087748e99797f08fdde6",
+  "sources": [
+    {
+      "archive": "ДАОО 37/3/281",
+      "url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0281_DAOO.djvu",
+      "sha256": "c541150d844b89d7215611ad4c83531b6bfe8526db93db25d4376fa9401a0cae"
+    }
+  ],
+  "event": {
+    "name_as_written": "Никита",
+    "father_normalized": "Тимофій Пачисний",
+    "mother": "Параскева",
+    "birth_julian": "1824-08-12",
+    "birth_gregorian": "1824-08-24",
+    "baptism_julian": "1824-08-17",
+    "baptism_gregorian": "1824-08-29",
+    "folio": "576–576 зв.",
+    "entry": 26,
+    "djvu_images_1_based": [
+      594,
+      595
+    ],
+    "title_image_1_based": 591,
+    "relationship_to_proved_line": "unproved",
+    "novelty": "exact dates and archive verification; person already mentioned by Claude"
+  },
+  "review": [
+    {
+      "archive": "ДАОО 37/3/269",
+      "birth_images_1_based": [
+        643,
+        649
+      ],
+      "records": 46
+    },
+    {
+      "archive": "ДАОО 37/3/281",
+      "birth_images_1_based": [
+        591,
+        597
+      ],
+      "records": 42
+    }
+  ],
+  "files": {
+    "index.html": {
+      "bytes": 732790,
+      "sha256": "b0dedab20e2aab9c9672fc3c53923a8bb69c03534403b80174122dac2a86e4da"
+    },
+    "research-gvoz-1824-nykyta-detail1.jpg": {
+      "bytes": 58233,
+      "sha256": "32b130caa3c58044eda521a9a06edf912201132a579713823e4d567e0d34b6a0"
+    },
+    "research-gvoz-1824-nykyta-detail2.jpg": {
+      "bytes": 75721,
+      "sha256": "1312a2560d9a272e864d94b15459ec2e5a31165e09b64fa93d61ce75aadaa139"
+    },
+    "research-gvoz-1824-nykyta-page1.jpg": {
+      "bytes": 839774,
+      "sha256": "c2cfe9682fff2e1a361c68753142785ef995ac2448c76cea42c90b60c69a4056"
+    },
+    "research-gvoz-1824-nykyta-page2.jpg": {
+      "bytes": 818767,
+      "sha256": "b9936430be161c011ceeab58a1596af1f1532481e667d12d598724735c93d354"
+    },
+    "research-gvoz-1824-title.jpg": {
+      "bytes": 560233,
+      "sha256": "7cd10fd60a5732c4c1cc06415d390ed242505a8ca3ff727826cfcdbfa4fee975"
+    },
+    "research-gvoz-1824.html": {
+      "bytes": 9245,
+      "sha256": "53306f41ca8a2cb48c45b9f76f2cc68a61f38cff181b93e3365c7ceb6df692d5"
+    },
+    "research-gvoz-1824.txt": {
+      "bytes": 6716,
+      "sha256": "0a7d9f2e8ea084d42ecba81a0dff1db94c1bb325d65d341da294cf78a93d4e5d"
+    }
+  }
+}
