@@ -1,0 +1,274 @@
+{
+  "date": "2026-11-17",
+  "comparison_commit": "32edad475c571db7e3f9052e72426181e7b02c15",
+  "sources": [
+    {
+      "archive": "ДАОО 37/3/201",
+      "url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0201_DAOO.djvu",
+      "sha256": "a39a721dcaf56b68a58f1ac4377e16af07a0b47e9d3a4f914239b16b4a992d33",
+      "bytes": 326386334
+    }
+  ],
+  "events": [
+    {
+      "child": "Фотина",
+      "father": "Лазар Дадул",
+      "mother": "Євдокія",
+      "birth_julian": "1818-03-20",
+      "birth_gregorian": "1818-04-01",
+      "baptism_julian": "1818-03-20",
+      "baptism_gregorian": "1818-04-01",
+      "godmother": "Марія, дружина Олександра Бернегри",
+      "folio": "407",
+      "entry": "female 6",
+      "image_1_based": 370
+    },
+    {
+      "person": "Іван Рубля",
+      "role": "marriage witness",
+      "julian": "1818-10-05",
+      "gregorian": "1818-10-17",
+      "folio": "412",
+      "entry": 8,
+      "image_1_based": 375,
+      "identity_with_husband_of_kseniia": "unproved"
+    }
+  ],
+  "poznanka": {
+    "archive": "ЦДІАК 224/1/1031",
+    "catalog": "https://archium.cdiak.archives.gov.ua/files/52109/",
+    "reviewed_images_1_based": [
+      2,
+      47
+    ],
+    "death_section_years": [
+      1805,
+      1809
+    ],
+    "positive_target_identification": false,
+    "images": [
+      {
+        "image_1_based": 1,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497068.jpg"
+      },
+      {
+        "image_1_based": 2,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497045.jpg"
+      },
+      {
+        "image_1_based": 3,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497074.jpg"
+      },
+      {
+        "image_1_based": 4,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497055.jpg"
+      },
+      {
+        "image_1_based": 5,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497065.jpg"
+      },
+      {
+        "image_1_based": 6,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497048.jpg"
+      },
+      {
+        "image_1_based": 7,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497058.jpg"
+      },
+      {
+        "image_1_based": 8,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497080.jpg"
+      },
+      {
+        "image_1_based": 9,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497047.jpg"
+      },
+      {
+        "image_1_based": 10,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497050.jpg"
+      },
+      {
+        "image_1_based": 11,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497085.jpg"
+      },
+      {
+        "image_1_based": 12,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497072.jpg"
+      },
+      {
+        "image_1_based": 13,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497079.jpg"
+      },
+      {
+        "image_1_based": 14,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497076.jpg"
+      },
+      {
+        "image_1_based": 15,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497063.jpg"
+      },
+      {
+        "image_1_based": 16,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497057.jpg"
+      },
+      {
+        "image_1_based": 17,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497069.jpg"
+      },
+      {
+        "image_1_based": 18,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497061.jpg"
+      },
+      {
+        "image_1_based": 19,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497073.jpg"
+      },
+      {
+        "image_1_based": 20,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497051.jpg"
+      },
+      {
+        "image_1_based": 21,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497083.jpg"
+      },
+      {
+        "image_1_based": 22,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497062.jpg"
+      },
+      {
+        "image_1_based": 23,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497067.jpg"
+      },
+      {
+        "image_1_based": 24,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497066.jpg"
+      },
+      {
+        "image_1_based": 25,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497056.jpg"
+      },
+      {
+        "image_1_based": 26,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497078.jpg"
+      },
+      {
+        "image_1_based": 27,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497070.jpg"
+      },
+      {
+        "image_1_based": 28,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497053.jpg"
+      },
+      {
+        "image_1_based": 29,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497084.jpg"
+      },
+      {
+        "image_1_based": 30,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497082.jpg"
+      },
+      {
+        "image_1_based": 31,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497046.jpg"
+      },
+      {
+        "image_1_based": 32,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497086.jpg"
+      },
+      {
+        "image_1_based": 33,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497043.jpg"
+      },
+      {
+        "image_1_based": 34,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497075.jpg"
+      },
+      {
+        "image_1_based": 35,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497060.jpg"
+      },
+      {
+        "image_1_based": 36,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497059.jpg"
+      },
+      {
+        "image_1_based": 37,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497077.jpg"
+      },
+      {
+        "image_1_based": 38,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497088.jpg"
+      },
+      {
+        "image_1_based": 39,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497042.jpg"
+      },
+      {
+        "image_1_based": 40,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497054.jpg"
+      },
+      {
+        "image_1_based": 41,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497052.jpg"
+      },
+      {
+        "image_1_based": 42,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497087.jpg"
+      },
+      {
+        "image_1_based": 43,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497064.jpg"
+      },
+      {
+        "image_1_based": 44,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497081.jpg"
+      },
+      {
+        "image_1_based": 45,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497071.jpg"
+      },
+      {
+        "image_1_based": 46,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497044.jpg"
+      },
+      {
+        "image_1_based": 47,
+        "url": "https://archium.cdiak.archives.gov.ua/static/files/149/1497049.jpg"
+      }
+    ]
+  },
+  "files": {
+    "index.html": {
+      "bytes": 732125,
+      "sha256": "f5d5cd9499b445a953c7fe15fb5f869244ef221e3ec71559c245b0d5403bc00f"
+    },
+    "research-gvoz-1818-fotina-detail.jpg": {
+      "bytes": 135863,
+      "sha256": "0f7af084fa840ddcf0f0ca8dab8b94975b16f170d42a998f86f43398ddb1641b"
+    },
+    "research-gvoz-1818-fotina-page.jpg": {
+      "bytes": 1157002,
+      "sha256": "49c368a35ea10b30e4679d41a734be2086fa9298fc7af8328c0b5c5dfb5ec35d"
+    },
+    "research-gvoz-1818-ivan-detail.jpg": {
+      "bytes": 200442,
+      "sha256": "0163997b02af24b09ac29d58f89d3e7ce3a3e7be58a7c29496b98eef63f93efe"
+    },
+    "research-gvoz-1818-ivan-page.jpg": {
+      "bytes": 1181720,
+      "sha256": "223c9413b2655adaabe7d4a13bda29a76338d2a306e3f44ea06b63847e6ec133"
+    },
+    "research-gvoz-1818-title.jpg": {
+      "bytes": 1006947,
+      "sha256": "9e8e28394a07b9354e0ab54a8ec3f5cbfb5fa324740c38dcc4f55e71b406f018"
+    },
+    "research-gvoz-1818.html": {
+      "bytes": 14032,
+      "sha256": "af3b56cfcb672069e66aaa1c0d1c90e4c751845dd22b301fde231b9bf7c1681e"
+    },
+    "research-gvoz-1818.txt": {
+      "bytes": 11146,
+      "sha256": "b1199f04e04de0d058b28982b137e000460a18fac119e38e203cb633925534e3"
+    }
+  }
+}
