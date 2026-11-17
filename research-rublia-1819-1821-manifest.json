@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-17",
+  "comparison_commit": "5f11ff8eb34c35c9ef8ae24d9513029523d1952a",
+  "sources": [
+    {
+      "archive": "ДАОО 37/3/214",
+      "url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0214_DAOO.djvu",
+      "bytes": 178510992,
+      "sha256": "0cad9f0a4922ea0c99a00cdbc24289cf11b8ea45e83939de3c43653b23e6d205"
+    },
+    {
+      "archive": "ДАОО 37/3/225",
+      "url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0225_DAOO.djvu",
+      "bytes": 296407063,
+      "sha256": "1d5ba0f792b00377b619f0b89dcfdc15c60c13c574b5798f61cec36cf5d67467"
+    },
+    {
+      "archive": "ДАОО 37/3/240",
+      "url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0240_DAOO.djvu",
+      "bytes": 186361255,
+      "sha256": "59471caeb94326c679faf4d76e0fb06cbae8631b4fced5fcc1c4eb79972db65c"
+    }
+  ],
+  "events": [
+    {
+      "kind": "marriage",
+      "archive": "ДАОО 37/3/214",
+      "folio": "372",
+      "image_1_based": 355,
+      "entry": 3,
+      "julian": "1819-01-22",
+      "gregorian": "1819-02-03",
+      "groom_as_read": "Петро Додул",
+      "groom_residence_as_read": "Познанка",
+      "bride": "Таїсія",
+      "bride_mother": "неназвана вдова Рублиха",
+      "direct_tree_link": "unproved"
+    },
+    {
+      "kind": "birth and baptism",
+      "archive": "ДАОО 37/3/240",
+      "folio": "413 зв.",
+      "image_1_based": 387,
+      "entry": "male 9",
+      "child": "Сергій",
+      "father": "Іван Рубля",
+      "mother": "Ксенія",
+      "birth_julian": "1821-03-11",
+      "birth_gregorian": "1821-03-23",
+      "baptism_julian": "1821-03-16",
+      "baptism_gregorian": "1821-03-28",
+      "direct_tree_link": "unproved"
+    }
+  ],
+  "files": {
+    "index.html": {
+      "bytes": 730948,
+      "sha256": "6356da951304d647a087e75106de3a50be22bd15f375dc7caf46789c814dcb35"
+    },
+    "research-rublia-1819-1821.html": {
+      "bytes": 15620,
+      "sha256": "7bb0b98e959ef0187c4cb70d8427f87cd66d5a939b9fe921684e3c3bb0467c05"
+    },
+    "research-rublia-1819-1821.txt": {
+      "bytes": 12892,
+      "sha256": "69ea37b9f61fb32dd8410dbbcb11f0e5204037526d14427532960071236fa654"
+    },
+    "research-rublia-1819-detail.png": {
+      "bytes": 596868,
+      "sha256": "f7729d2a50580e50ee027ddedf89ad104968065484e6608803e2eb32311890ad"
+    },
+    "research-rublia-1819-page.jpg": {
+      "bytes": 1014001,
+      "sha256": "bed2b3863a35bc8b771719ca9377d1e39fc339dd3274bf3a025260e51918349d"
+    },
+    "research-rublia-1819-title.jpg": {
+      "bytes": 934230,
+      "sha256": "7cbd512fdbbc393c767c20070a2a3934d4baaa3c54784275fcbeb56f0f4c18db"
+    },
+    "research-rublia-1821-detail.png": {
+      "bytes": 707139,
+      "sha256": "d98b46581bd5a4ac30207db52f79abb41da81c2e000689dc793893a3740de5b5"
+    },
+    "research-rublia-1821-page.jpg": {
+      "bytes": 1245045,
+      "sha256": "7639e05bc0bb9fbfd664afe2c1b8fa7fcf23dbb92b46983dc5441789a3ab8893"
+    },
+    "research-rublia-1821-title.jpg": {
+      "bytes": 1029755,
+      "sha256": "3608fb121992f70a7bf4b9702c2b3a1abd2b57d946cdb772be193c0e0838ffe9"
+    }
+  }
+}
