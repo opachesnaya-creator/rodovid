@@ -46,8 +46,8 @@
   ],
   "files": {
     "index.html": {
-      "bytes": 732790,
-      "sha256": "b0dedab20e2aab9c9672fc3c53923a8bb69c03534403b80174122dac2a86e4da"
+      "bytes": 734041,
+      "sha256": "3630f5bfa6448f13dff76faa1c7cfe2243ffdd1e4186799126f60c9380bb22a8"
     },
     "research-gvoz-1824-nykyta-detail1.jpg": {
       "bytes": 58233,
@@ -70,12 +70,47 @@
       "sha256": "7cd10fd60a5732c4c1cc06415d390ed242505a8ca3ff727826cfcdbfa4fee975"
     },
     "research-gvoz-1824.html": {
-      "bytes": 9245,
-      "sha256": "53306f41ca8a2cb48c45b9f76f2cc68a61f38cff181b93e3365c7ceb6df692d5"
+      "bytes": 15661,
+      "sha256": "01309336941ce317c559e6d850d51b734e3006a974e19b9e616dc5c8af39c7c9"
     },
     "research-gvoz-1824.txt": {
-      "bytes": 6716,
-      "sha256": "0a7d9f2e8ea084d42ecba81a0dff1db94c1bb325d65d341da294cf78a93d4e5d"
+      "bytes": 11615,
+      "sha256": "69865e9391e08d53fdbd37d9c2d33986c7c13b82f4c0b77c90b473a0a36f006d"
+    },
+    "research-ananyiv-1824-rublia-detail.jpg": {
+      "bytes": 293167,
+      "sha256": "67c9369cb32a013b16fe1bd145cc8d06fd1e0127a50bf33d865d646fb3f0d7a9"
+    },
+    "research-ananyiv-1824-rublia-page.jpg": {
+      "bytes": 1027888,
+      "sha256": "3eda4424e1842fc8095ccf13c807c21eed40b3a950c5730921e23e6612b0be69"
+    },
+    "research-ananyiv-1824-title-detail.jpg": {
+      "bytes": 414663,
+      "sha256": "fbf50750ee7e43bb69723c3a9d974f27ebb99f0dfc58e3c44feb1f307e20fec8"
+    },
+    "research-ananyiv-1824-title.jpg": {
+      "bytes": 702562,
+      "sha256": "42f85aa574961a9765ea50d50774ee8d686dcdaf7b3a1e8e9e631acfd993f2de"
     }
+  },
+  "additional_verification": {
+    "comparison_commit": "46a185c894d3891812d65917257336de0086636e",
+    "date": "2026-11-17",
+    "event": "marriage of Kondrat and Tetiana daughter of Stefan Doga",
+    "julian": "1824-01-20",
+    "gregorian": "1824-02-01",
+    "parish": "Миколаївська церква Ананьєва",
+    "groom_affiliation_as_written": "Гвоздавка",
+    "archive": "ДАОО 37/3/281",
+    "title_folio": "88",
+    "marriage_folio": "106",
+    "title_djvu_image_1_based": 91,
+    "marriage_djvu_image_1_based": 109,
+    "entry": 2,
+    "familysearch_ark": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSK4-PWYY-6",
+    "surname_initial_ambiguous": "Р/Д; existing identification retained",
+    "parents_of_groom": "not supplied",
+    "new_relationships_added": false
   }
 }
