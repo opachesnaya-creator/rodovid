@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-18",
+  "target": "[Дани/Даны?] Стефанович Дога × Меланія Матвіївна, parents of Paraskeva 1831; relationship to Tetiana unproven",
+  "repository_base": "3ef3f2fbe7c51efe9e46ac531cf74ed14f3e5693",
+  "result": "Target Doga/Melania marriage not identified. Separate 1823 marriage of Evdokia, daughter of Danila Doga, found. Relationship to the family tree unproven.",
+  "completed_birth_searches": [
+    {
+      "year": 1828,
+      "case": "37/3/341",
+      "djvu": "245 right–263 left",
+      "folios": "251–268v",
+      "records": "1–146",
+      "result": "No confirmed target Doga/Melania or Luka Kondrat Rublya"
+    }
+  ],
+  "rejected": [
+    "1830 death5 DjVu132: Vasilii Stratila son Fedor, not Doga",
+    "1824 marriage9 DjVu110: Dimitrii Drobika, not Doga",
+    "37/3/326 is wrong district, excluded",
+    "1827 death32 DjVu135: Ivan Soroka, not Doga"
+  ],
+  "unresolved": [
+    "1824 marriage3 DjVu109: Ekaterina daughter Leontii [Kodoga?]. NOT verified Doga.",
+    "1828 birth69 DjVu254: possible Afanasii Doga with Ekaterina; requires careful reading.",
+    "1826 marriage13: Stefan [Volov?/surname unclear] × Maria. Do not classify as Doga."
+  ],
+  "next": [
+    "Search children of Florentii [surname unresolved] and Evdokia after their 1823 marriage; clarify groom surname and bride mother.",
+    "Find a clearer copy of Ananyiv 1825 marriages; do not treat the faded scan as a firm negative.",
+    "Check earlier marriage books, including Ananyiv 1821 (37/3/240).",
+    "Compare Danila Doga of 1823 with [Dani/Dany?] Stefanovich Doga of 1831 without assuming identity."
+  ],
+  "marriage_sections_visually_traversed": [
+    {
+      "year": 1823,
+      "case": "37/3/269",
+      "djvu": "245 right–251 left",
+      "folios": "264–269v",
+      "records": "1–37",
+      "limitation": "Target pair not identified; a separate marriage of Evdokia, daughter of Danila Doga, found at no.33.",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0269_DAOO.djvu",
+      "limitation_uk": ""
+    },
+    {
+      "year": 1824,
+      "case": "37/3/281",
+      "djvu": "109 right–115 left",
+      "folios": "106–111v",
+      "records": "1–26",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0281_DAOO.djvu",
+      "limitation_uk": ""
+    },
+    {
+      "year": 1825,
+      "case": "37/3/95",
+      "djvu": "139 right–147 left",
+      "folios": "140–147v",
+      "records": "1–49",
+      "limitation": "Very faded. Visual pass only; many names could not be deciphered. This year is NOT reliably excluded.",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0001-0100/0037_03_0095_DAOO.djvu",
+      "limitation_uk": "Сильно вицвіло; багато імен не розібрано. Рік не виключений."
+    },
+    {
+      "year": 1826,
+      "case": "37/3/312",
+      "djvu": "187 right–195 left",
+      "folios": "180–187v",
+      "records": "1–51",
+      "limitation": "Faded. Marriage13 Stefan × Maria not securely Doga; no target Melania.",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0312_DAOO.djvu",
+      "limitation_uk": "Є вицвілі місця; № 13 не підтверджений як Дога."
+    },
+    {
+      "year": 1827,
+      "case": "37/3/320",
+      "djvu": "124 right–130 left",
+      "folios": "128–133v",
+      "records": "1–42",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0320_DAOO.djvu",
+      "limitation_uk": ""
+    },
+    {
+      "year": 1828,
+      "case": "37/3/341",
+      "djvu": "263 right–269 left",
+      "folios": "269–274v",
+      "records": "1–34",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0341_DAOO.djvu",
+      "limitation_uk": ""
+    },
+    {
+      "year": 1829,
+      "case": "37/3/364",
+      "djvu": "175 right–185 left",
+      "folios": "181–190v",
+      "records": "1–43",
+      "limitation": "Faded; record22 and others not fully deciphered",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0364_DAOO.djvu",
+      "limitation_uk": "Є вицвілі місця, зокрема № 22."
+    },
+    {
+      "year": 1830,
+      "case": "37/3/376",
+      "djvu": "121 right–131 left",
+      "folios": "117–126v",
+      "records": "1–40",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0376_DAOO.djvu",
+      "limitation_uk": ""
+    },
+    {
+      "year": 1831,
+      "case": "37/3/390",
+      "djvu": "162 right–176 left",
+      "folios": "169–182v",
+      "records": "1–56",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0390_DAOO.djvu",
+      "limitation_uk": ""
+    }
+  ],
+  "method": "Manual visual search, not a complete transcription. All DjVu image numbers are one-based and are not FamilySearch frame numbers.",
+  "new_record": {
+    "case": "37/3/269",
+    "parish": "Миколаївська церква Ананьєва",
+    "folio": "268v",
+    "djvu_image": 250,
+    "side": "left",
+    "number": 33,
+    "event": "marriage",
+    "date_os": "1823-11-08",
+    "date_ns": "1823-11-20",
+    "bride": "Євдокія, дочка Данила Доги",
+    "father": "Данило Дога; по батькові не назване",
+    "groom": "Флорентій [прізвище не розібране надійно]",
+    "residence": "Ананьїв: наречений — поселянин казенного селища; батько нареченої — поселянин «сего села». Місце народження не встановлено.",
+    "marriage_order": "У записі «1-м браком»; віку наречених немає.",
+    "mother": "Not named",
+    "tree_connection": "Unproven; no persons or parent-child links added to the proven tree.",
+    "identity_with_1831_father": "Unproven. The 1823 record does not give Stefanovich or name Melania.",
+    "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0269_DAOO.djvu"
+  }
+}
