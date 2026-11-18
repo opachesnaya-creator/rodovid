@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-17",
+  "comparison_commit": "12dabf07d898040f151b547909fce32a063c8648",
+  "new_proven_genealogy_links": false,
+  "publication_status": "publication_bundle",
+  "documents": [
+    {
+      "archive": "ДАОО37/3/364",
+      "year": 1829,
+      "parish": "Ананьїв, Миколаївська",
+      "djvu_range_1_based": [
+        155,
+        175
+      ],
+      "folios": "161–180v",
+      "sha256": "f017ac5215e95257539e499be43c5c028458a4cfdf29f5c51e007241c488149d",
+      "source": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0364_DAOO.djvu",
+      "result": "target_birth_not_identified"
+    },
+    {
+      "archive": "ДАОО37/3/376",
+      "year": 1830,
+      "parish": "Ананьїв, Миколаївська",
+      "djvu_range_1_based": [
+        96,
+        121
+      ],
+      "folios": "93–116v",
+      "sha256": "4dbc621e4cf4f0603dd1033bb783f59a8b998c7ae28b2b780df738da6222c2a0",
+      "source": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0376_DAOO.djvu",
+      "result": "target_birth_not_identified"
+    },
+    {
+      "archive": "ДАОО37/3/390",
+      "year": 1831,
+      "parish": "Ананьїв, Миколаївська",
+      "djvu_range_1_based": [
+        134,
+        162
+      ],
+      "folios": "141–168v",
+      "sha256": "e29a0bc02644fd0a1460b040c8310bd29f4ca35b4c032da5d8d846ebc64441af",
+      "source": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0390_DAOO.djvu",
+      "result": "target_birth_not_identified"
+    }
+  ],
+  "files": {
+    "research-ananyiv-1830-luka-rejected.jpg": {
+      "bytes": 186823,
+      "sha256": "b1d5883d7441cc9cc392834406975339d6bd02633bc1c9a07fd268e2ff7a35b3"
+    },
+    "index.html": {
+      "bytes": 735979,
+      "sha256": "88c54edc44ee39c46ab3ff4f2d636c9624b5d4e3459b39c8e6c074988c4974a3"
+    },
+    "research-pachesny-etymology.html": {
+      "bytes": 10470,
+      "sha256": "14c805262e41d5a4198298e47b9e8de4f961634a9df875aac4570f50ff7b4a9c"
+    },
+    "research-ananyiv-1831-luka46-rejected.jpg": {
+      "bytes": 214532,
+      "sha256": "576906fd0838178bf99b48abe11e1e04509c29ab1c1d9e063cd25b360e4395ab"
+    },
+    "research-ananyiv-1831-doga-detail.jpg": {
+      "bytes": 223773,
+      "sha256": "ea7afa6c4324d4079c102a4d062f066445597a3c1351d5bf6aa6543e38ccb7cb"
+    },
+    "research-ananyiv-1829-1831.html": {
+      "bytes": 10783,
+      "sha256": "889f65d5f886c6aacd5edfabeef006f378684b413a946b7eaf4edfe28c9485ff"
+    },
+    "research-ananyiv-1831-end.jpg": {
+      "bytes": 974227,
+      "sha256": "9e435ea243b4b34a7b20aa518ed10a97e0a9e0475064a5eccbf27082bcdd4676"
+    },
+    "research-ananyiv-1831-title.jpg": {
+      "bytes": 729023,
+      "sha256": "e2fdc65974623065c7a51dedaac5e4e1e5bdd0b75df07a6f6297202e55254fe4"
+    },
+    "research-ananyiv-1829-1831.txt": {
+      "bytes": 8426,
+      "sha256": "9de66918ee094237a685d7c5e19d8aa011ca9fc8a175e2c2e8cf16d77b6348c8"
+    },
+    "research-pachesny-etymology.txt": {
+      "bytes": 8483,
+      "sha256": "d7782579fc4fa496b29febe88f4fbb908aad19955ec38c3b090d6ebb93d4aeb2"
+    },
+    "research-ananyiv-1831-doga-page.jpg": {
+      "bytes": 867215,
+      "sha256": "439dc572f65c732ec630330cbca6bcdb8e0aed393cea6aa18ce9f24614bcd6f1"
+    },
+    "research-ananyiv-1831-luka49-rejected.jpg": {
+      "bytes": 224297,
+      "sha256": "0d30496bfb482e75d88aa5e5c3a4142751cea86f5f847d95bd6f06a023da618a"
+    },
+    "research-ananyiv-1831-doga-name.jpg": {
+      "bytes": 77362,
+      "sha256": "0132a0244af711a0e5e14a5196e3aeb114c34f9068d42f0478a1f46296caee0b"
+    }
+  },
+  "publication_prepared_date": "2026-11-18"
+}
