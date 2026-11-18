@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-11-18",
+  "repository_base": "47e8b46c1f9b04066d55300163aab5f99cf230f9",
+  "method": "Manual visual search in original scans, not a full transcription. DjVu image numbers are one-based and are not FamilySearch image numbers.",
+  "new_record": {
+    "archive": "ДАОО",
+    "case": "37/3/281",
+    "parish": "Миколаївська церква Ананьєва",
+    "folio": "88v",
+    "djvu_image": 92,
+    "side": "left, bottom",
+    "number": 6,
+    "event": "birth and baptism",
+    "date_os": "1824-01-26",
+    "date_ns": "1824-02-07",
+    "baptism_date_os": "1824-01-26",
+    "baptism_date_ns": "1824-02-07",
+    "child_reading": "Анисія [?]",
+    "child_name_confidence": "provisional; name split across lines",
+    "father": "Данило Дога",
+    "mother": "Єфросинія",
+    "godfather": "Стефан Дога",
+    "parents_marriage": "Parents described as legally married; marriage date not given.",
+    "father_status": "казенний поселянин",
+    "godfather_status": "казенний поселянин того ж села",
+    "residence": "Ананьїв",
+    "birthplace_precision": "Registered in Ananyiv parish; a separate exact birthplace or house is not named.",
+    "patronymics": "Not given for either parent or godfather.",
+    "mother_maiden_name": "Not given",
+    "death": "Not given",
+    "lifespan": "Unknown",
+    "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0281_DAOO.djvu",
+    "proven_connection": "Stefan Doga served as godfather to the child of Danila Doga and Efrosinia.",
+    "unproven_connections": [
+      "Danila of this record = father of Evdokia in 1823 marriage no.33.",
+      "Stefan of this record = father of Tetiana in 1824 marriage no.2.",
+      "Danila = [Dani/Dany?] Stefanovich Doga, husband of Melania Matveevna in 1831.",
+      "Any specific blood relationship between Danila and Stefan.",
+      "Connection of this household to the proven direct family tree."
+    ]
+  },
+  "birth_sections_visually_traversed": [
+    {
+      "year": 1824,
+      "case": "37/3/281",
+      "djvu": "91 right–109 left",
+      "folios": "88–105v",
+      "records": "1–122",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0201-0300/0037_03_0281_DAOO.djvu"
+    },
+    {
+      "year": 1827,
+      "case": "37/3/320",
+      "djvu": "108 right–124 left",
+      "folios": "112–127v",
+      "records": "1–124",
+      "source_url": "https://archive.od.gov.ua/wp-content/old-files/EL_ARH/M/0037/0037_03/0301-0400/0037_03_0320_DAOO.djvu"
+    }
+  ],
+  "target": "Children of Evdokia and the groom provisionally read as Florentii [surname unresolved] from Ananyiv marriage no.33, 1823.",
+  "target_result": "No secure match identified in these two visual passes. This is not proof of absence.",
+  "duplicate_check": "Fresh origin/main checked; searches for Efrosinia/Anisia and Doga with 1824 did not reveal this birth record. Unpublished Claude notes not checked.",
+  "next": [
+    "Check Ananyiv births 1825 and 1826 for the 1823 couple; do not treat these years as already searched for this target.",
+    "Find additional children and marriage of Danila Doga and Efrosinia.",
+    "Compare the two Danila mentions (1823 and 1824) without asserting identity.",
+    "Seek patronymic, age or direct kinship wording for Stefan Doga before identifying him with Tetiana father."
+  ]
+}
